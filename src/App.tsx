@@ -5,10 +5,10 @@ function App() {
 	return (
 		<>
 			<div className="min-w-80 bg-green-900">
-				<header className=" h-24 relative bg-green-900 flex items-center justify-around sm:justify-normal sm:px-4  lg:max-w-[1024px] lg:mx-auto  ">
+				<header className=" h-24 md:h-28 relative bg-green-900 flex items-center justify-around sm:justify-normal sm:px-4  lg:max-w-[1024px] lg:mx-auto  ">
 					<img
 						src={logoEP}
-						className="w-16"
+						className="w-16 md:w-24 "
 					/>
 
 					<div className="sm:hidden">
