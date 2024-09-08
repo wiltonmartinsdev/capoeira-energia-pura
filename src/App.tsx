@@ -1,4 +1,5 @@
 import { HamburgerMenu } from "./components/HamburgerMenu/HamburgerMenu";
+import logoEP from "/src/assets/logoEnergia.png";
 
 function App() {
 	return (
@@ -6,7 +7,7 @@ function App() {
 			<div className="min-w-80 bg-green-900">
 				<header className=" h-24 relative bg-green-900 flex items-center justify-around sm:justify-normal sm:px-4  lg:max-w-[1024px] lg:mx-auto  ">
 					<img
-						src="src/assets/logoEnergia.png"
+						src={logoEP}
 						className="w-16"
 					/>
 
