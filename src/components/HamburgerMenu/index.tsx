@@ -19,7 +19,7 @@ export const HamburgerMenu = () => {
 						animate={{ opacity: 1 }}
 						exit={{ opacity: 0 }}
 						transition={{ duration: 0.5 }}
-						className="absolute top-24 right-0 w-full bg-green-900 border-t border-yellow-400 min-h-screen">
+						className="absolute top-24 right-0 w-full z-50 bg-green-900 border-t border-yellow-400 min-h-screen">
 						<a
 							href="#"
 							className="block px-4 py-2 text-white hover:text-yellow-400">

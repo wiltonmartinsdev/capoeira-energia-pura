@@ -2,5 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+.swiper-button-prev {
+	color: yellow;
+	display: none;
+}
 
+.swiper-button-next {
+	color: yellow;
+	display: none;
+}
 
+.swiper-pagination {
+	/* border: 1px solid red; */
+
+	margin-bottom: 450px;
+}
+.swiper-pagination-bullet {
+	background-color: yellow;
+}
+
+.swiper:hover {
+	.swiper-button-prev {
+		color: yellow;
+
+		display: block;
+	}
+
+	.swiper-button-next {
+		color: yellow;
+
+		display: block;
+	}
+}

@@ -1,11 +1,12 @@
-import { HamburgerMenu } from "./components/HamburgerMenu/HamburgerMenu";
 import logoEP from "/src/assets/logoEnergia.png";
+import { Carousel } from "./components/Carousel";
+import { HamburgerMenu } from "./components/HamburgerMenu";
 
 function App() {
 	return (
 		<>
 			<div className="min-w-80 bg-green-900">
-				<header className=" h-24 md:h-28 relative bg-green-900 flex items-center justify-around sm:justify-normal sm:px-4  lg:max-w-[1024px] lg:mx-auto  ">
+				<header className="h-24 md:h-28 relative bg-green-900 flex items-center justify-around sm:justify-normal sm:px-4  lg:max-w-[1024px] lg:mx-auto  ">
 					<img
 						src={logoEP}
 						className="w-16 md:w-24 "
@@ -57,8 +58,8 @@ function App() {
 				</header>
 			</div>
 
-			<main className=" min-w-80 border border-red-600 lg:w-[1024px] lg:mx-auto">
-				<h1>Hello World!</h1>
+			<main className=" min-w-80">
+				<Carousel />
 			</main>
 		</>
 	);
