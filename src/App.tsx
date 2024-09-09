@@ -25,30 +25,50 @@ function App() {
 
 					<div className="hidden sm:flex sm:w-full sm:justify-center">
 						<nav className="">
-							<ul className="flex items-center gap-8 text-white ">
+							<ul className="flex items-center gap-8 text-white">
 								<li>
 									<a
 										href="#"
-										className="">
+										className="hover:text-yellow-400">
 										Notícias
 									</a>
 								</li>
 								<li>
-									<a href="#">Associação</a>
+									<a
+										href="#"
+										className="hover:text-yellow-400">
+										Associação
+									</a>
 								</li>
 								<li>
-									<a href="#">Capoeira</a>
+									<a
+										href="#"
+										className="hover:text-yellow-400">
+										Capoeira
+									</a>
 								</li>
 
 								<li>
-									<a href="#">Projetos</a>
+									<a
+										href="#"
+										className="hover:text-yellow-400">
+										Projetos
+									</a>
 								</li>
 								<li>
-									<a href="#">Mídias</a>
+									<a
+										href="#"
+										className="hover:text-yellow-400">
+										Mídias
+									</a>
 								</li>
 
 								<li>
-									<a href="#">Contato</a>
+									<a
+										href="#"
+										className="hover:text-yellow-400">
+										Contato
+									</a>
 								</li>
 							</ul>
 						</nav>
