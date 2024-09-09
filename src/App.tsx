@@ -5,8 +5,8 @@ import { HamburgerMenu } from "./components/HamburgerMenu";
 function App() {
 	return (
 		<>
-			<div className="min-w-80 bg-green-900">
-				<header className="h-24 md:h-28 relative bg-green-900 flex items-center justify-around sm:justify-normal sm:px-4  lg:max-w-[1024px] lg:mx-auto  ">
+			<div className="min-w-80 bg-green-900 border-b-2 border-yellow-400">
+				<header className="relative h-24 md:h-28bg-green-900 flex items-center justify-around sm:justify-normal sm:px-4  lg:max-w-[1024px] lg:mx-auto  ">
 					<img
 						src={logoEP}
 						className="w-16 md:w-24 "
