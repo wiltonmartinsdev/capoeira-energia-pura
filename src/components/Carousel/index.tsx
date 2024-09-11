@@ -12,7 +12,7 @@ import "swiper/swiper-bundle.css";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 export function Carousel() {
-	const videoOptions = { width: "100%", height: "500px" };
+	const videoOptions = { width: "100%", height: "500" };
 
 	return (
 		<>
@@ -21,7 +21,7 @@ export function Carousel() {
 				centeredSlides={true}
                 pagination-type="progressbar"
 				autoplay={{
-					delay: 250000000000,
+					delay: 3000,
 					disableOnInteraction: false,
 				}}
 				pagination={{
