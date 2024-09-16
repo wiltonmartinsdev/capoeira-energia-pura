@@ -220,7 +220,7 @@ function App() {
 								A Associação Energia Pura oferece uma vibrante
 								seção de dança efêmera liderada pela talentosa{" "}
 								<span className="font-bold italic">
-									Amandine Zabumba
+									Amandine Zabumba.
 								</span>
 							</p>
 
