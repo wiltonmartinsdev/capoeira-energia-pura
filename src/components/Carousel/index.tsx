@@ -21,7 +21,7 @@ export function Carousel() {
 				centeredSlides={true}
                 pagination-type="progressbar"
 				autoplay={{
-					delay: 3000,
+					delay: 3000000,
 					disableOnInteraction: false,
 				}}
 				pagination={{
@@ -29,7 +29,7 @@ export function Carousel() {
 				}}
 				navigation={true}
 				modules={[Autoplay,Pagination, Navigation]}
-				className="mySwiper">
+				className="mySwiper mb-10">
 				<SwiperSlide>
 					<YouTube
 						videoId="9t-fgOlXE18"
