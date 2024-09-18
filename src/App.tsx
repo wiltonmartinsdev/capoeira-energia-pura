@@ -82,26 +82,30 @@ function App() {
 				</header>
 			</div>
 
-			<main className="min-w-80">
+			<main className="min-w-80 xl:max-w-[1920px] mx-auto">
 				<Carousel />
 
 				<h1 className="text-green-900 text-3xl text-center uppercase font-bold mb-2">
 					A Associação
 				</h1>
 
-				<div className="text-left px-4">
-					<p className="mb-4">
-						Bem-vindo ao site da{" "}
+				<div className="text-left px-4 sm:px-20 lg:max-w-[1518px] lg:mx-auto">
+					<p className="mb-4 text-center">
+						Bem-vindo ao site da <br />
 						<span className="font-bold italic">
 							Associação Energia Pura Internacional.
 						</span>
 					</p>
 
 					<p className="mb-4">
-						Nosso grupo tem como objetivo divulgar e desenvolver o
-						jogo da Capoeira e as atividades a ela como: canto,
-						música, dança e organizar o ensino dessa atividade
-						(aulas técnicas, jogos, demonstrações, shows e estágios)
+						Nosso grupo tem como missão divulgar, preservar e
+						promover o rico universo da Capoeira, destacando não
+						apenas a prática do jogo em si, mas também suas
+						expressões culturais associadas, como o canto, a música
+						e a dança. Acreditamos que a Capoeira é muito mais do
+						que um esporte ou arte marcial — ela é uma manifestação
+						cultural e histórica que carrega em si valores de
+						ancestralidade, resistência e comunidade.
 					</p>
 
 					<div className="text-center mb-16">
@@ -113,8 +117,8 @@ function App() {
 					Um pouco das nossas atividades...
 				</h2>
 
-				<section className=" px-4 sm:flex sm:justify-between">
-					<article className="flex flex-col mb-6">
+				<section className="max-w-[1430px] mx-auto px-4 sm:px-20 xl:flex xl:justify-around xl:gap-6 xl:px-3">
+					<article className="flex flex-col mb-6 ">
 						<h2 className="text-green-900 text-xl uppercase font-bold">
 							Capoeira
 						</h2>
@@ -123,7 +127,7 @@ function App() {
 							<img
 								src={capoeiraBgCard}
 								alt=""
-								className="object-fit rounded-2xl"
+								className="w-full rounded-2xl"
 							/>
 
 							<Button className="card-button">
@@ -131,7 +135,7 @@ function App() {
 							</Button>
 						</div>
 
-						<div className="w-full sm:w-[500px] pl-2">
+						<div className="w-full xl:w-96 pl-2">
 							<p className="mb-4">
 								A capoeira é uma expressão cultural fascinante
 								que une luta, dança, jogo, canto e ritmo. É uma
@@ -150,11 +154,11 @@ function App() {
 								quanto para praticantes experientes.
 							</p>
 
-							<p className="mb-2">
+							<p className="mb-4 lg:mb-0 xl:mb-4">
 								Experimente! A primeira aula é gratuita!
 							</p>
-							<div className="flex justify-end">
-								<Button className="w-24">Saiba mais...</Button>
+							<div className="flex justify-center">
+								<Button>Saiba mais...</Button>
 							</div>
 						</div>
 					</article>
@@ -168,7 +172,7 @@ function App() {
 							<img
 								src={batucadaBgCard}
 								alt=""
-								className="object-cover rounded-2xl"
+								className="w-full rounded-2xl"
 							/>
 
 							<Button className="card-button">
@@ -176,7 +180,7 @@ function App() {
 							</Button>
 						</div>
 
-						<div className="w-full sm:w-[500px] px-4">
+						<div className="w-full xl:w-96 px-4">
 							<p className="mb-4">
 								Originária do Rio de Janeiro, a batucada é uma
 								tradição pulsante da percussão brasileira,
@@ -184,7 +188,7 @@ function App() {
 								e na energia contagiante do samba.
 							</p>
 
-							<p className="mb-2">
+							<p className="mb-4">
 								Sob a direção do{" "}
 								<span className="font-bold italic">
 									Professor Marco
@@ -193,8 +197,8 @@ function App() {
 								do iniciante ao mais experiente.
 							</p>
 
-							<div className="flex justify-end">
-								<Button className="w-24">Saiba mais...</Button>
+							<div className="flex justify-center">
+								<Button>Saiba mais...</Button>
 							</div>
 						</div>
 					</article>
@@ -207,7 +211,7 @@ function App() {
 							<img
 								src={sambaxeBgCard}
 								alt=""
-								className="object-cover rounded-2xl"
+								className="w-full rounded-2xl"
 							/>
 
 							<Button className="card-button">
@@ -215,7 +219,7 @@ function App() {
 							</Button>
 						</div>
 
-						<div className="w-full sm:w-[500px] px-4">
+						<div className="w-full xl:w-96 px-4">
 							<p className="mb-4">
 								A Associação Energia Pura oferece uma vibrante
 								seção de dança efêmera liderada pela talentosa{" "}
@@ -224,7 +228,7 @@ function App() {
 								</span>
 							</p>
 
-							<p>
+							<p className="mb-4">
 								O ponto alto dessa experiência é a participação
 								nos desfiles do Carnaval da Guiana Francesa, ao
 								lado do grupo de percussão BATUQUE AE. Juntos,
@@ -232,8 +236,8 @@ function App() {
 								ritmo, cores e alegria.
 							</p>
 
-							<div className="flex justify-end">
-								<Button className="w-24">Saiba mais...</Button>
+							<div className="flex justify-center">
+								<Button>Saiba mais...</Button>
 							</div>
 						</div>
 					</article>

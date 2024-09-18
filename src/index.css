@@ -10,6 +10,10 @@
 	box-sizing: border-box;
 }
 
+.swiper{
+    border-bottom: 3px solid #facc15;
+}
+
 .swiper-button-prev {
 	color: yellow;
 	display: none;
@@ -53,10 +57,23 @@
 	transition: 0.5s ease-out;
 	overflow: visible;
 	margin-top: 10px;
-	margin-bottom: 35px;
+	margin-bottom: 40px;
 
-	@media screen and (min-width: 640px) {
-		height: 400px;
+    @media screen and (min-width: 640px) {
+        height: 450px;
+	}
+
+    @media screen and (min-width: 768px) {
+        height: 500px;
+	}
+
+    @media screen and (min-width: 1024px) {
+        height: 600px;
+	}
+
+	@media screen and (min-width: 1280px) {
+        width: 400px;
+        height:340px;
 	}
 }
 
