@@ -97,7 +97,7 @@ function App() {
 						</span>
 					</p>
 
-					<p className="mb-4">
+					<p className="mb-4 pl-5">
 						Nosso grupo tem como missão divulgar, preservar e
 						promover o rico universo da Capoeira, destacando não
 						apenas a prática do jogo em si, mas também suas
@@ -113,13 +113,13 @@ function App() {
 					</div>
 				</div>
 
-				<h2 className="text-green-900 text-3xl text-center uppercase font-bold mb-8">
+				<h2 className="text-green-900 text-3xl text-center uppercase font-bold px-4 mb-8">
 					Um pouco das nossas atividades...
 				</h2>
 
-				<section className="max-w-[1430px] mx-auto px-4 sm:px-20 xl:flex xl:justify-around xl:gap-6 xl:px-3">
+				<section className="max-w-[1430px] mx-auto px-8 sm:px-20 xl:flex xl:justify-around">
 					<article className="flex flex-col mb-6 ">
-						<h2 className="text-green-900 text-xl uppercase font-bold">
+						<h2 className="text-green-900 text-xl uppercase font-bold mb-3">
 							Capoeira
 						</h2>
 
@@ -164,7 +164,7 @@ function App() {
 					</article>
 
 					<article className="flex flex-col mb-6">
-						<h2 className="text-green-900 text-xl uppercase font-bold">
+						<h2 className="text-green-900 text-xl uppercase font-bold mb-3">
 							Batucada
 						</h2>
 
@@ -204,7 +204,7 @@ function App() {
 					</article>
 
 					<article className="flex flex-col">
-						<h2 className="text-green-900 text-xl uppercase font-bold">
+						<h2 className="text-green-900 text-xl uppercase font-bold mb-3">
 							Sambaxé
 						</h2>
 						<div className="card flex ">
