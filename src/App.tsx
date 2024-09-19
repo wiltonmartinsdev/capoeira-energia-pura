@@ -1,3 +1,5 @@
+import Typewriter from "typewriter-effect";
+
 import { Button } from "./components/ui/button";
 import logoEP from "/src/assets/logoEnergia.png";
 import batucadaBgCard from "./assets/batucadaBgCard.png";
@@ -22,7 +24,7 @@ function App() {
 							Associação Energia Pura
 						</h1>
 
-						<p className="text-center text-lg text-white ">
+						<p className="text-center text-lg text-white">
 							Internacional
 						</p>
 					</div>
@@ -85,15 +87,22 @@ function App() {
 			<main className="min-w-80 xl:max-w-[1920px] mx-auto">
 				<Carousel />
 
-				<h1 className="text-green-900 text-3xl text-center uppercase font-bold mb-2">
-					A Associação
-				</h1>
-
-				<div className="text-left px-4 sm:px-20 lg:max-w-[1518px] lg:mx-auto">
-					<p className="mb-4 text-center">
-						Bem-vindo ao site da <br />
-						<span className="font-bold italic">
-							Associação Energia Pura Internacional.
+				<div className="text-left px-4 sm:px-20 lg:max-w-[1518px] lg:mx-auto ">
+					<p className="mb-4 text-center font-bold">
+						Bem-vindo ao site da
+						<br />
+						<span className="text-3xl font-bold text-green-900 italic">
+							<Typewriter
+								options={{
+									strings: [
+										"Associação Energia Pura Internacional",
+									],
+									autoStart: true,
+									loop: true,
+									delay: 60,
+									//   startDelay: 1500, // Tempo para iniciar após o texto anterior
+								}}
+							/>
 						</span>
 					</p>
 
