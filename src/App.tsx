@@ -108,7 +108,7 @@ function App() {
 						ancestralidade, resistência e comunidade.
 					</p>
 
-					<div className="text-center mb-16">
+					<div className="text-center mb-16 ">
 						<Button> Saiba mais...</Button>
 					</div>
 				</div>
