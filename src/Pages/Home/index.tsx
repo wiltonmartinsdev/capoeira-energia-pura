@@ -11,6 +11,7 @@ import capoeiraBgCard from "@/assets/capoeiraBgCard.png";
 import dubaiFlag from "@/assets/dubaiFlag.png";
 import franceFlag from "@/assets/franceFlag.png";
 import frenchGuianaFlag from "@/assets/frenchGuianaFlag.png";
+import frenchGuianaFlagBg from "@/assets/frenchGuianaFlagBg.png";
 import italiaFlag from "@/assets/italiaFlag.png";
 import logoEP from "@/assets/logoEnergia.png";
 import macapaFlag from "@/assets/macapaFlag.png";
@@ -264,7 +265,11 @@ export function Home() {
 
 				<div className="min-w-80 bg-green-900 xl:max-w-[1920px] rounded-b-xl">
 					<section className=" h-[450px] sm:h-[720px] lg:h-[830px] xl:h-[870px]">
-						<div className="bg-[url('src/assets/frenchGuianaFlagBg.png')] bg-no-repeat bg-[length:100%_100%] px-8 flex flex-col justify-center h-40 sm:h-52 lg:h-80 xl:h-[380px] ">
+						<div
+							className="bg-no-repeat bg-[length:100%_100%] px-8 flex flex-col justify-center h-40 sm:h-52 lg:h-80 xl:h-[380px]"
+							style={{
+								backgroundImage: `url(${frenchGuianaFlagBg})`,
+							}}>
 							<p className="text-black font-bold text-center uppercase text-3xl sm:text-4xl lg:text-6xl xl:text-7xl">
 								Energia Pura Internacional
 							</p>
