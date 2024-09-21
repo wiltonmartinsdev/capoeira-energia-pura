@@ -6,8 +6,16 @@ import { HamburgerMenu } from "@/components/HamburgerMenu";
 import { Carousel } from "@/components/Carousel";
 import { Button } from "@/components/ui/button";
 import batucadaBgCard from "@/assets/batucadaBgCard.png";
+import brasilFlag from "@/assets/brasilFlag.png";
 import capoeiraBgCard from "@/assets/capoeiraBgCard.png";
+import dubaiFlag from "@/assets/dubaiFlag.png";
+import franceFlag from "@/assets/franceFlag.png";
+import frenchGuianaFlag from "@/assets/frenchGuianaFlag.png";
+import italiaFlag from "@/assets/italiaFlag.png";
 import logoEP from "@/assets/logoEnergia.png";
+import macapaFlag from "@/assets/macapaFlag.png";
+import martinicaFlag from "@/assets/martinicaFlag.png";
+import oiapoqueFlag from "@/assets/oiapoqueFlag.png";
 import sambaxeBgCard from "@/assets/sambaxeBgCard.png";
 
 export function Home() {
@@ -293,8 +301,8 @@ export function Home() {
 										<figure className="ml-20 w-[200px]">
 											<img
 												key={id}
-												src="src/assets/macapaFlag.png"
-												alt="Brasil Flag"
+												src={macapaFlag}
+												alt="Bandeira de Macapá"
 												className="rounded-lg"
 											/>
 
@@ -306,8 +314,8 @@ export function Home() {
 										<figure className="w-[200px]">
 											<img
 												key={id}
-												src="src/assets/oiapoqueFlag.png"
-												alt="Brasil Flag"
+												src={oiapoqueFlag}
+												alt="Bandeira do Oiapoque"
 												className="rounded-lg"
 											/>
 
@@ -319,8 +327,8 @@ export function Home() {
 										<figure className="w-[200px]">
 											<img
 												key={id}
-												src="src/assets/brasilFlag.png"
-												alt="Brasil Flag"
+												src={brasilFlag}
+												alt="Bandeira do Brasil"
 												className="rounded-lg"
 											/>
 
@@ -332,7 +340,7 @@ export function Home() {
 										<figure className="w-[200px]">
 											<img
 												key={id}
-												src="src/assets/frenchGuianaFlag.png"
+												src={frenchGuianaFlag}
 												alt="Bandeira da Guiana Francesa"
 												className="rounded-lg"
 											/>
@@ -345,7 +353,7 @@ export function Home() {
 										<figure className="w-[200px]">
 											<img
 												key={id}
-												src="src/assets/martinicaFlag.png"
+												src={martinicaFlag}
 												alt="Bandeira da Martinica"
 												className="rounded-lg"
 											/>
@@ -358,7 +366,7 @@ export function Home() {
 										<figure className="w-[200px]">
 											<img
 												key={id}
-												src="src/assets/franceFlag.png"
+												src={franceFlag}
 												alt="Bandeira da França"
 												className="rounded-lg"
 											/>
@@ -371,7 +379,7 @@ export function Home() {
 										<figure className="w-[200px]">
 											<img
 												key={id}
-												src="src/assets/italiaFlag.png"
+												src={italiaFlag}
 												alt="Bandeira da Itália"
 												className="rounded-lg"
 											/>
@@ -384,7 +392,7 @@ export function Home() {
 										<figure className="w-[200px]">
 											<img
 												key={id}
-												src="src/assets/dubaiFlag.png"
+												src={dubaiFlag}
 												alt="Bandeira de Dubai"
 												className="rounded-lg"
 											/>
@@ -415,8 +423,8 @@ export function Home() {
 										<figure className="ml-20 w-[200px] text-center">
 											<img
 												key={id}
-												src="src/assets/macapaFlag.png"
-												alt="Brasil Flag"
+												src={macapaFlag}
+												alt="Bandeira de Macapá"
 												className="rounded-lg"
 											/>
 
@@ -428,8 +436,8 @@ export function Home() {
 										<figure className=" w-[200px] text-center">
 											<img
 												key={id}
-												src="src/assets/oiapoqueFlag.png"
-												alt="Brasil Flag"
+												src={oiapoqueFlag}
+												alt="Bandeira do Oiapoque"
 												className="rounded-lg"
 											/>
 
@@ -441,8 +449,8 @@ export function Home() {
 										<figure className=" w-[200px] text-center">
 											<img
 												key={id}
-												src="src/assets/brasilFlag.png"
-												alt="Brasil Flag"
+												src={brasilFlag}
+												alt="Bandeira do Brasil"
 												className="rounded-lg"
 											/>
 
@@ -454,7 +462,7 @@ export function Home() {
 										<figure className="w-[200px] text-center">
 											<img
 												key={id}
-												src="src/assets/frenchGuianaFlag.png"
+												src={frenchGuianaFlag}
 												alt="Bandeira da Guiana Francesa"
 												className="rounded-lg"
 											/>
@@ -467,7 +475,7 @@ export function Home() {
 										<figure className="w-[200px] text-center">
 											<img
 												key={id}
-												src="src/assets/martinicaFlag.png"
+												src={martinicaFlag}
 												alt="Bandeira da Martinica"
 												className="rounded-lg"
 											/>
@@ -480,7 +488,7 @@ export function Home() {
 										<figure className="w-[200px] text-center">
 											<img
 												key={id}
-												src="src/assets/franceFlag.png"
+												src={franceFlag}
 												alt="Bandeira da França"
 												className="rounded-lg"
 											/>
@@ -493,7 +501,7 @@ export function Home() {
 										<figure className="w-[200px] text-center">
 											<img
 												key={id}
-												src="src/assets/italiaFlag.png"
+												src={italiaFlag}
 												alt="Bandeira da Itália"
 												className="rounded-lg"
 											/>
@@ -506,7 +514,7 @@ export function Home() {
 										<figure className="w-[200px] text-center">
 											<img
 												key={id}
-												src="src/assets/dubaiFlag.png"
+												src={dubaiFlag}
 												alt="Bandeira de Dubai"
 												className="rounded-lg"
 											/>
@@ -535,7 +543,7 @@ export function Home() {
 										<figure className="ml-20 w-[200px] text-center">
 											<img
 												key={id}
-												src="src/assets/dubaiFlag.png"
+												src={dubaiFlag}
 												alt="Bandeira de Dubai"
 												className="rounded-lg"
 											/>
@@ -548,7 +556,7 @@ export function Home() {
 										<figure className="w-[200px] text-center">
 											<img
 												key={id}
-												src="src/assets/italiaFlag.png"
+												src={italiaFlag}
 												alt="Bandeira da Itália"
 												className="rounded-lg"
 											/>
@@ -561,7 +569,7 @@ export function Home() {
 										<figure className="w-[200px] text-center">
 											<img
 												key={id}
-												src="src/assets/franceFlag.png"
+												src={franceFlag}
 												alt="Bandeira da França"
 												className="rounded-lg"
 											/>
@@ -574,7 +582,7 @@ export function Home() {
 										<figure className="w-[200px] text-center">
 											<img
 												key={id}
-												src="src/assets/martinicaFlag.png"
+												src={martinicaFlag}
 												alt="Bandeira da Martinica"
 												className="rounded-lg"
 											/>
@@ -587,7 +595,7 @@ export function Home() {
 										<figure className="w-[200px] text-center">
 											<img
 												key={id}
-												src="src/assets/frenchGuianaFlag.png"
+												src={frenchGuianaFlag}
 												alt="Bandeira da Guiana Francesa"
 												className="rounded-lg"
 											/>
@@ -600,8 +608,8 @@ export function Home() {
 										<figure className=" w-[200px] text-center">
 											<img
 												key={id}
-												src="src/assets/brasilFlag.png"
-												alt="Brasil Flag"
+												src={brasilFlag}
+												alt="Bandeira do Brasil"
 												className="rounded-lg"
 											/>
 
@@ -613,8 +621,8 @@ export function Home() {
 										<figure className=" w-[200px] text-center">
 											<img
 												key={id}
-												src="src/assets/oiapoqueFlag.png"
-												alt="Brasil Flag"
+												src={oiapoqueFlag}
+												alt="Bandeira do Oiapoque"
 												className="rounded-lg"
 											/>
 
@@ -626,8 +634,8 @@ export function Home() {
 										<figure className="w-[200px] text-center">
 											<img
 												key={id}
-												src="src/assets/macapaFlag.png"
-												alt="Brasil Flag"
+												src={macapaFlag}
+												alt="Bandeira de Macapá"
 												className="rounded-lg"
 											/>
 
