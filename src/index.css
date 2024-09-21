@@ -10,10 +10,16 @@
 	box-sizing: border-box;
 }
 
+.bg-image {
+	background-image: url("src/assets/frenchGuianaFlagBg.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
 /* Carousel */
 
 .swiper {
-	border-bottom: 4px solid #facc15;
+	border-bottom: 6px solid #facc15;
 }
 
 .swiper-button-prev {
