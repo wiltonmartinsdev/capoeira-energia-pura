@@ -99,7 +99,7 @@ export function Home() {
 				<Carousel />
 
 				<div className="text-left px-4 sm:px-20 lg:max-w-[1518px] lg:mx-auto ">
-					<p className="mb-4 text-center font-bold">
+					<p className="h-[110px] sm:h-auto sm:mb-4 text-center font-bold">
 						Bem-vindo ao site da
 						<br />
 						<span className="text-3xl font-bold text-green-900 italic">
@@ -311,7 +311,7 @@ export function Home() {
 												className="rounded-lg"
 											/>
 
-											<figcaption className="uppercase text-center text-white">
+											<figcaption className="uppercase text-center text-white font-semibold">
 												Macapá
 											</figcaption>
 										</figure>
