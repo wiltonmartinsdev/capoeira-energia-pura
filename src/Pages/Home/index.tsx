@@ -263,7 +263,7 @@ export function Home() {
 					</article>
 				</section>
 
-				<div className="min-w-80 bg-green-900 xl:max-w-[1920px] rounded-b-xl">
+				<div className="min-w-80 bg-green-900 xl:max-w-[1920px]">
 					<section className=" h-[450px] sm:h-[720px] lg:h-[830px] xl:h-[870px]">
 						<div
 							className="bg-no-repeat bg-[length:100%_100%] px-8 flex flex-col justify-center h-40 sm:h-52 lg:h-80 xl:h-[380px]"
@@ -655,6 +655,32 @@ export function Home() {
 					</section>
 				</div>
 			</main>
+
+			<footer className="min-w-80 h-28 bg-green-900 border-t-2 border-yellow-400">
+				<div className="sm:w-[385px] border-b-2 border-l-2 border-r-2  border-yellow-400 rounded-b-lg mx-auto flex sm:justify-between mb-4">
+					<span className=" text-xs sm:text-base leading-9 text-center font-bold mx-auto text-white bg-green-900 sm:py-[5px]">
+						Energia Pura Internacional
+					</span>
+
+					<span className="leading-9 text-green-900 font-bold bg-yellow-400 w-36 text-center">
+						Só o filé!
+					</span>
+				</div>
+
+				<div className="flex flex-col items-center justify-center gap-0.5">
+					<a
+						href="https://devwiltonmartins.vercel.app/"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="text-white hover:text-yellow-400 text-xs">
+						Desenvolvido por Wilton Lira Martins
+					</a>
+
+					<p className="text-white hover:text-yellow-400 text-xs cursor-default">
+						Copyright &copy; 2024 - Todos os direitos reservados
+					</p>
+				</div>
+			</footer>
 		</>
 	);
 }
