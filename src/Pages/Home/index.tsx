@@ -1,7 +1,7 @@
 import AOS from "aos";
 import { useEffect } from "react";
 import Marquee from "react-marquee-slider";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 
 import { HamburgerMenu } from "@/components/HamburgerMenu";
@@ -90,21 +90,33 @@ export function Home() {
 								<li>
 									<NavLink
 										to="/"
-										className="hover:text-yellow-400">
+										className={({ isActive }) =>
+										isActive
+											? "text-yellow-400"
+											: "text-white"
+									}>
 										Notícias
 									</NavLink>
 								</li>
 								<li>
 									<NavLink
 										to="/association"
-										className="hover:text-yellow-400">
+										className={({ isActive }) =>
+										isActive
+											? "text-yellow-400"
+											: "text-white"
+									}>
 										Associação
 									</NavLink>
 								</li>
 								<li>
 									<NavLink
 										to="/capoeira"
-										className="hover:text-yellow-400">
+										className={({ isActive }) =>
+										isActive
+											? "text-yellow-400"
+											: "text-white"
+									}>
 										Capoeira
 									</NavLink>
 								</li>
@@ -112,14 +124,22 @@ export function Home() {
 								<li>
 									<NavLink
 										to="/projects"
-										className="hover:text-yellow-400">
+										className={({ isActive }) =>
+										isActive
+											? "text-yellow-400"
+											: "text-white"
+									}>
 										Projetos
 									</NavLink>
 								</li>
 								<li>
 									<NavLink
 										to="/medias"
-										className="hover:text-yellow-400">
+										className={({ isActive }) =>
+										isActive
+											? "text-yellow-400"
+											: "text-white"
+									}>
 										Mídias
 									</NavLink>
 								</li>
@@ -127,7 +147,11 @@ export function Home() {
 								<li>
 									<NavLink
 										to="/contact"
-										className="hover:text-yellow-400">
+										className={({ isActive }) =>
+										isActive
+											? "text-yellow-400"
+											: "text-white"
+									}>
 										Contato
 									</NavLink>
 								</li>
@@ -173,7 +197,9 @@ export function Home() {
 					</p>
 
 					<div className="text-center mb-20">
-						<Button> Saiba mais...</Button>
+						<Link to="/capoeira">
+							<Button> Saiba mais...</Button>
+						</Link>
 					</div>
 				</div>
 
