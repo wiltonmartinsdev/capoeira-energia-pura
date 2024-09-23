@@ -45,10 +45,25 @@ export function Home() {
 	];
 
 	useEffect(() => {
-		AOS.init({
-			duration: 1500,
-		});
+		const handleScroll = () => {
+			AOS.init({
+				duration: 1500,
+			});
+			AOS.refresh(); // Atualiza as animações com base no scroll
+			console.log("Animação AOS inicializada após scroll!");
+
+			// Remove o event listener de scroll após a primeira execução para que o AOS não seja reinicializado em cada scroll
+			window.removeEventListener("scroll", handleScroll);
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		// Cleanup para garantir que o listener seja removido se o componente for desmontado antes do scroll
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
 	}, []);
+
 	return (
 		<>
 			<div className="min-w-80 bg-green-900 border-b-4 border-yellow-400 sticky top-0 z-50">
@@ -157,7 +172,7 @@ export function Home() {
 						ancestralidade, resistência e comunidade.
 					</p>
 
-					<div className="text-center mb-20 ">
+					<div className="text-center mb-20">
 						<Button> Saiba mais...</Button>
 					</div>
 				</div>
