@@ -21,7 +21,7 @@ export function Carousel() {
 				centeredSlides={true}
                 pagination-type="progressbar"
 				autoplay={{
-					delay: 3000000,
+					delay: 3000,
 					disableOnInteraction: false,
 				}}
 				pagination={{

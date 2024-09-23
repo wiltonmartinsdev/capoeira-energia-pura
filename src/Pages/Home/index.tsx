@@ -1,3 +1,5 @@
+import AOS from "aos";
+import { useEffect } from "react";
 import Marquee from "react-marquee-slider";
 import { NavLink } from "react-router-dom";
 import Typewriter from "typewriter-effect";
@@ -20,7 +22,33 @@ import martinicaFlag from "@/assets/martinicaFlag.png";
 import oiapoqueFlag from "@/assets/oiapoqueFlag.png";
 import sambaxeBgCard from "@/assets/sambaxeBgCard.png";
 
+import "aos/dist/aos.css";
+
 export function Home() {
+	const flags = [
+		{ src: macapaFlag, alt: "Bandeira de Macapá", caption: "Macapá" },
+		{ src: oiapoqueFlag, alt: "Bandeira do Oiapoque", caption: "Oiapoque" },
+		{ src: brasilFlag, alt: "Bandeira do Brasil", caption: "Brasil" },
+		{
+			src: frenchGuianaFlag,
+			alt: "Bandeira da Guiana Francesa",
+			caption: "Guiana Francesa",
+		},
+		{
+			src: martinicaFlag,
+			alt: "Bandeira da Martinica",
+			caption: "Martinica",
+		},
+		{ src: franceFlag, alt: "Bandeira da França", caption: "França" },
+		{ src: italiaFlag, alt: "Bandeira da Itália", caption: "Itália" },
+		{ src: dubaiFlag, alt: "Bandeira de Dubai", caption: "Dubai" },
+	];
+
+	useEffect(() => {
+		AOS.init({
+			duration: 1500,
+		});
+	}, []);
 	return (
 		<>
 			<div className="min-w-80 bg-green-900 border-b-4 border-yellow-400 sticky top-0 z-50">
@@ -42,7 +70,7 @@ export function Home() {
 					</div>
 
 					<div className="hidden sm:flex sm:w-full sm:justify-center">
-						<nav className="">
+						<nav>
 							<ul className="flex items-center gap-8 text-white">
 								<li>
 									<NavLink
@@ -99,7 +127,7 @@ export function Home() {
 			<main className="min-w-80 xl:max-w-[1920px] mx-auto">
 				<Carousel />
 
-				<div className="text-left px-4 sm:px-20 lg:max-w-[1518px] lg:mx-auto ">
+				<div className="text-left px-4 sm:px-20 lg:max-w-[1518px] lg:mx-auto">
 					<p className="h-[110px] sm:h-auto sm:mb-4 text-center font-bold">
 						Bem-vindo ao site da
 						<br />
@@ -129,17 +157,21 @@ export function Home() {
 						ancestralidade, resistência e comunidade.
 					</p>
 
-					<div className="text-center mb-16 ">
+					<div className="text-center mb-20 ">
 						<Button> Saiba mais...</Button>
 					</div>
 				</div>
 
-				<h2 className="text-green-900 text-3xl text-center uppercase font-bold px-4 mb-8">
+				<h2
+					className="text-green-900 text-3xl text-center uppercase font-bold px-4 mb-8"
+					data-aos="fade-up">
 					Um pouco das nossas atividades...
 				</h2>
 
 				<section className="max-w-[1430px] mx-auto px-8 sm:px-20 xl:flex xl:justify-around">
-					<article className="flex flex-col mb-6 ">
+					<article
+						className="flex flex-col mb-6"
+						data-aos="fade-right">
 						<h2 className="text-green-900 text-xl uppercase font-bold mb-3">
 							Capoeira
 						</h2>
@@ -184,7 +216,9 @@ export function Home() {
 						</div>
 					</article>
 
-					<article className="flex flex-col mb-6">
+					<article
+						className="flex flex-col mb-6"
+						data-aos="zoom-in">
 						<h2 className="text-green-900 text-xl uppercase font-bold mb-3">
 							Batucada
 						</h2>
@@ -224,7 +258,9 @@ export function Home() {
 						</div>
 					</article>
 
-					<article className="flex flex-col">
+					<article
+						className="flex flex-col"
+						data-aos="fade-left">
 						<h2 className="text-green-900 text-xl uppercase font-bold mb-3">
 							Sambaxé
 						</h2>
@@ -264,7 +300,9 @@ export function Home() {
 					</article>
 				</section>
 
-				<div className="min-w-80 bg-green-900 xl:max-w-[1920px]">
+				<div
+					className="min-w-80 bg-green-900 xl:max-w-[1920px]"
+					data-aos="zoom-in">
 					<section className=" h-[450px] sm:h-[720px] lg:h-[830px] xl:h-[870px]">
 						<div
 							className="bg-no-repeat bg-[length:100%_100%] px-8 flex flex-col justify-center h-40 sm:h-52 lg:h-80 xl:h-[380px]"
@@ -302,112 +340,19 @@ export function Home() {
 								onFinish={() =>
 									console.log("Marquee finished")
 								}>
-								{Array.from({ length: 1 }).map((_, id) => (
-									<div className="flex gap-20">
-										<figure className="ml-20 w-[200px]">
-											<img
-												key={id}
-												src={macapaFlag}
-												alt="Bandeira de Macapá"
-												className="rounded-lg"
-											/>
-
-											<figcaption className="uppercase text-center text-white font-semibold">
-												Macapá
-											</figcaption>
-										</figure>
-
-										<figure className="w-[200px]">
-											<img
-												key={id}
-												src={oiapoqueFlag}
-												alt="Bandeira do Oiapoque"
-												className="rounded-lg"
-											/>
-
-											<figcaption className="uppercase text-center text-white font-semibold">
-												Oiapoque
-											</figcaption>
-										</figure>
-
-										<figure className="w-[200px]">
-											<img
-												key={id}
-												src={brasilFlag}
-												alt="Bandeira do Brasil"
-												className="rounded-lg"
-											/>
-
-											<figcaption className="uppercase  text-center text-white font-semibold">
-												Brasil
-											</figcaption>
-										</figure>
-
-										<figure className="w-[200px]">
-											<img
-												key={id}
-												src={frenchGuianaFlag}
-												alt="Bandeira da Guiana Francesa"
-												className="rounded-lg"
-											/>
-
-											<figcaption className="uppercase  text-center text-white font-semibold">
-												Guiana Francesa
-											</figcaption>
-										</figure>
-
-										<figure className="w-[200px]">
-											<img
-												key={id}
-												src={martinicaFlag}
-												alt="Bandeira da Martinica"
-												className="rounded-lg"
-											/>
-
-											<figcaption className="uppercase  text-center text-white font-semibold">
-												Martinica
-											</figcaption>
-										</figure>
-
-										<figure className="w-[200px]">
-											<img
-												key={id}
-												src={franceFlag}
-												alt="Bandeira da França"
-												className="rounded-lg"
-											/>
-
-											<figcaption className="uppercase  text-center text-white font-semibold">
-												França
-											</figcaption>
-										</figure>
-
-										<figure className="w-[200px]">
-											<img
-												key={id}
-												src={italiaFlag}
-												alt="Bandeira da Itália"
-												className="rounded-lg"
-											/>
-
-											<figcaption className="uppercase  text-center text-white font-semibold">
-												Itália
-											</figcaption>
-										</figure>
-
-										<figure className="w-[200px]">
-											<img
-												key={id}
-												src={dubaiFlag}
-												alt="Bandeira de Dubai"
-												className="rounded-lg"
-											/>
-
-											<figcaption className="uppercase  text-center text-white font-semibold">
-												Dubai
-											</figcaption>
-										</figure>
-									</div>
+								{flags.map((flag, index) => (
+									<figure
+										key={index}
+										className="ml-20 w-[200px]">
+										<img
+											src={flag.src}
+											alt={flag.alt}
+											className="rounded-lg"
+										/>
+										<figcaption className="uppercase text-center text-white font-semibold">
+											{flag.caption}
+										</figcaption>
+									</figure>
 								))}
 							</Marquee>
 						</div>
@@ -424,112 +369,19 @@ export function Home() {
 								onFinish={() =>
 									console.log("Marquee finished")
 								}>
-								{Array.from({ length: 1 }).map((_, id) => (
-									<div className="flex gap-20">
-										<figure className="ml-20 w-[200px] text-center">
-											<img
-												key={id}
-												src={macapaFlag}
-												alt="Bandeira de Macapá"
-												className="rounded-lg"
-											/>
-
-											<figcaption className="uppercase text-white font-semibold">
-												Macapá
-											</figcaption>
-										</figure>
-
-										<figure className=" w-[200px] text-center">
-											<img
-												key={id}
-												src={oiapoqueFlag}
-												alt="Bandeira do Oiapoque"
-												className="rounded-lg"
-											/>
-
-											<figcaption className="uppercase text-white font-semibold">
-												Oiapoque
-											</figcaption>
-										</figure>
-
-										<figure className=" w-[200px] text-center">
-											<img
-												key={id}
-												src={brasilFlag}
-												alt="Bandeira do Brasil"
-												className="rounded-lg"
-											/>
-
-											<figcaption className="uppercase text-white font-semibold">
-												Brasil
-											</figcaption>
-										</figure>
-
-										<figure className="w-[200px] text-center">
-											<img
-												key={id}
-												src={frenchGuianaFlag}
-												alt="Bandeira da Guiana Francesa"
-												className="rounded-lg"
-											/>
-
-											<figcaption className="uppercase text-white font-semibold">
-												Guiana Francesa
-											</figcaption>
-										</figure>
-
-										<figure className="w-[200px] text-center">
-											<img
-												key={id}
-												src={martinicaFlag}
-												alt="Bandeira da Martinica"
-												className="rounded-lg"
-											/>
-
-											<figcaption className="uppercase text-white font-semibold">
-												Martinica
-											</figcaption>
-										</figure>
-
-										<figure className="w-[200px] text-center">
-											<img
-												key={id}
-												src={franceFlag}
-												alt="Bandeira da França"
-												className="rounded-lg"
-											/>
-
-											<figcaption className="uppercase text-white font-semibold">
-												França
-											</figcaption>
-										</figure>
-
-										<figure className="w-[200px] text-center">
-											<img
-												key={id}
-												src={italiaFlag}
-												alt="Bandeira da Itália"
-												className="rounded-lg"
-											/>
-
-											<figcaption className="uppercase text-white font-semibold">
-												Itália
-											</figcaption>
-										</figure>
-
-										<figure className="w-[200px] text-center">
-											<img
-												key={id}
-												src={dubaiFlag}
-												alt="Bandeira de Dubai"
-												className="rounded-lg"
-											/>
-
-											<figcaption className="uppercase text-white font-semibold">
-												Dubai
-											</figcaption>
-										</figure>
-									</div>
+								{flags.map((flag, index) => (
+									<figure
+										key={index}
+										className="ml-20 w-[200px]">
+										<img
+											src={flag.src}
+											alt={flag.alt}
+											className="rounded-lg"
+										/>
+										<figcaption className="uppercase text-center text-white font-semibold">
+											{flag.caption}
+										</figcaption>
+									</figure>
 								))}
 							</Marquee>
 
@@ -544,113 +396,23 @@ export function Home() {
 								onFinish={() =>
 									console.log("Marquee finished")
 								}>
-								{Array.from({ length: 1 }).map((_, id) => (
-									<div className="flex gap-20">
-										<figure className="ml-20 w-[200px] text-center">
+								{flags
+									.slice() // Faz uma cópia do array para não modificar o original
+									.reverse()
+									.map((flag, index) => (
+										<figure
+											key={index}
+											className="ml-20 w-[200px]">
 											<img
-												key={id}
-												src={dubaiFlag}
-												alt="Bandeira de Dubai"
+												src={flag.src}
+												alt={flag.alt}
 												className="rounded-lg"
 											/>
-
-											<figcaption className="uppercase text-white font-semibold">
-												Dubai
+											<figcaption className="uppercase text-center text-white font-semibold">
+												{flag.caption}
 											</figcaption>
 										</figure>
-
-										<figure className="w-[200px] text-center">
-											<img
-												key={id}
-												src={italiaFlag}
-												alt="Bandeira da Itália"
-												className="rounded-lg"
-											/>
-
-											<figcaption className="uppercase text-white font-semibold">
-												Itália
-											</figcaption>
-										</figure>
-
-										<figure className="w-[200px] text-center">
-											<img
-												key={id}
-												src={franceFlag}
-												alt="Bandeira da França"
-												className="rounded-lg"
-											/>
-
-											<figcaption className="uppercase text-white font-semibold">
-												França
-											</figcaption>
-										</figure>
-
-										<figure className="w-[200px] text-center">
-											<img
-												key={id}
-												src={martinicaFlag}
-												alt="Bandeira da Martinica"
-												className="rounded-lg"
-											/>
-
-											<figcaption className="uppercase text-white font-semibold">
-												Martinica
-											</figcaption>
-										</figure>
-
-										<figure className="w-[200px] text-center">
-											<img
-												key={id}
-												src={frenchGuianaFlag}
-												alt="Bandeira da Guiana Francesa"
-												className="rounded-lg"
-											/>
-
-											<figcaption className="uppercase text-white font-semibold">
-												Guiana Francesa
-											</figcaption>
-										</figure>
-
-										<figure className=" w-[200px] text-center">
-											<img
-												key={id}
-												src={brasilFlag}
-												alt="Bandeira do Brasil"
-												className="rounded-lg"
-											/>
-
-											<figcaption className="uppercase text-white font-semibold">
-												Brasil
-											</figcaption>
-										</figure>
-
-										<figure className=" w-[200px] text-center">
-											<img
-												key={id}
-												src={oiapoqueFlag}
-												alt="Bandeira do Oiapoque"
-												className="rounded-lg"
-											/>
-
-											<figcaption className="uppercase text-white font-semibold">
-												Oiapoque
-											</figcaption>
-										</figure>
-
-										<figure className="w-[200px] text-center">
-											<img
-												key={id}
-												src={macapaFlag}
-												alt="Bandeira de Macapá"
-												className="rounded-lg"
-											/>
-
-											<figcaption className="uppercase text-white font-semibold">
-												Macapá
-											</figcaption>
-										</figure>
-									</div>
-								))}
+									))}
 							</Marquee>
 						</div>
 					</section>
