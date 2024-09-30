@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
-import { Association } from "./Pages/Association";
+import { About } from "./Pages/About";
 import { Capoeira } from "./Pages/Capoeira";
 import { Contact } from "./Pages/Contact";
 import { Home } from "./Pages/Home";
@@ -16,8 +16,8 @@ export function AppRoutes() {
 			/>
 
 			<Route
-				path="/association"
-				element={<Association />}
+				path="/about"
+				element={<About />}
 			/>
 			<Route
 				path="/capoeira"
