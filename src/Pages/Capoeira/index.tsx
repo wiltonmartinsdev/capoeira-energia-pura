@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { HamburgerMenu } from "@/components/HamburgerMenu";
 import { Footer } from "@/components/Footer";
 import logoEP from "@/assets/logoEnergia.png";
-import rodaDeCapoeira from "@/assets/roda-de-capoeira.jpeg";
+import historyCapoeira from "@/assets/historyCapoeira.png";
 
 export function Capoeira() {
 	return (
@@ -108,7 +108,7 @@ export function Capoeira() {
 			{/* Scroll Down */}
 			<div className="relative h-screen scroll-smooth">
 				<img
-					src={rodaDeCapoeira}
+					src={historyCapoeira}
 					alt="Imagem de fundo"
 					className="object-cover w-full h-screen"
 				/>
