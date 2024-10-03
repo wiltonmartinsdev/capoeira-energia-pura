@@ -1,11 +1,34 @@
+import AOS from "aos";
+import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 import { HamburgerMenu } from "@/components/HamburgerMenu";
 import { Footer } from "@/components/Footer";
-import logoEP from "@/assets/logoEnergia.png";
 import historyCapoeira from "@/assets/historyCapoeira.png";
+import logoEP from "@/assets/logoEnergia.png";
+
+import "aos/dist/aos.css";
 
 export function Capoeira() {
+	useEffect(() => {
+		const handleScroll = () => {
+			AOS.init({
+				duration: 1500,
+			});
+			AOS.refresh(); // Atualiza as animações com base no scroll
+			console.log("Animação AOS inicializada após scroll!");
+
+			// Remove o event listener de scroll após a primeira execução para que o AOS não seja reinicializado em cada scroll
+			window.removeEventListener("scroll", handleScroll);
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		// Cleanup para garantir que o listener seja removido se o componente for desmontado antes do scroll
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
 	return (
 		<>
 			<div className="min-w-80 bg-green-950 border-b-4 border-yellow-400 sticky top-0 z-50">
@@ -154,11 +177,11 @@ export function Capoeira() {
 					<article
 						id="history"
 						className="scroll-mt-32">
-						<h2 className="text-green-900 font-extrabold text-2xl mb-2">
+						<h2 className="text-green-900 font-extrabold text-2xl mb-2" data-aos="fade-right">
 							História
 						</h2>
 
-						<p>
+						<p data-aos="zoom-in">
 							A Capoeira é uma manifestação cultural
 							afro-brasileira que combina elementos de arte
 							marcial, dança, música e acrobacias. Sua origem está
@@ -178,11 +201,11 @@ export function Capoeira() {
 					</article>
 
 					<article>
-						<h2 className="text-green-900 font-extrabold text-2xl mb-2">
+						<h2 className="text-green-900 font-extrabold text-2xl mb-2" data-aos="fade-right">
 							O disfarce da dança
 						</h2>
 
-						<p>
+						<p data-aos="zoom-in">
 							A Capoeira foi desenvolvida como uma forma de luta e
 							resistência, mas sua prática era frequentemente
 							mascarada como uma dança para evitar a repressão dos
@@ -195,11 +218,11 @@ export function Capoeira() {
 					</article>
 
 					<article>
-						<h2 className="text-green-900 font-extrabold text-2xl mb-2">
+						<h2 className="text-green-900 font-extrabold text-2xl mb-2" data-aos="fade-right">
 							Quilombo e resistência
 						</h2>
 
-						<p>
+						<p data-aos="zoom-in">
 							Os quilombos, comunidades formadas por africanos
 							fugitivos da escravidão, foram fundamentais para a
 							preservação e o desenvolvimento da Capoeira. O mais
@@ -213,11 +236,11 @@ export function Capoeira() {
 					</article>
 
 					<article>
-						<h2 className="text-green-900 font-extrabold text-2xl mb-2">
+						<h2 className="text-green-900 font-extrabold text-2xl mb-2" data-aos="fade-right">
 							Proibição e marginalização
 						</h2>
 
-						<p>
+						<p data-aos="zoom-in">
 							Após a abolição da escravatura em 1888, a Capoeira
 							continuou sendo perseguida, pois era vista como uma
 							prática de indivíduos marginalizados e considerada
@@ -231,18 +254,18 @@ export function Capoeira() {
 					</article>
 
 					<article>
-						<h2 className="text-green-900 font-extrabold text-2xl mb-2">
+						<h2 className="text-green-900 font-extrabold text-2xl mb-2" data-aos="fade-right">
 							Reconhecimento e evolução
 						</h2>
 
-						<p>
+						<p data-aos="zoom-in">
 							Foi no século XX que a Capoeira começou a ser
 							legitimada e transformada. Dois mestres em
 							particular tiveram um papel crucial nessa transição:
 						</p>
 
 						<ol className="list-disc pl-5">
-							<li>
+							<li data-aos="zoom-in">
 								<span className="text-green-900 font-semibold">
 									Mestre Pastinha (Vicente Ferreira Pastinha):
 								</span>{" "}
@@ -251,7 +274,7 @@ export function Capoeira() {
 								ritualística da Capoeira, preservando seu
 								caráter cultural.
 							</li>
-							<li>
+							<li data-aos="zoom-in">
 								<span className="text-green-900 font-semibold">
 									Mestre Bimba (Manoel dos Reis Machado):{" "}
 								</span>
@@ -265,11 +288,11 @@ export function Capoeira() {
 					</article>
 
 					<article>
-						<h2 className="text-green-900 font-extrabold text-2xl mb-2">
+						<h2 className="text-green-900 font-extrabold text-2xl mb-2" data-aos="fade-right">
 							A roda
 						</h2>
 
-						<p>
+						<p data-aos="zoom-in">
 							Ao contrário de outros esportes de combate, cujo
 							foco está no confronto ou na competição, a capoeira
 							tem sua essência na roda. A roda é uma cerimônia em
@@ -290,11 +313,11 @@ export function Capoeira() {
 					</article>
 
 					<article>
-						<h2 className="text-green-900 font-extrabold text-2xl mb-2">
+						<h2 className="text-green-900 font-extrabold text-2xl mb-2" data-aos="fade-right">
 							O Batizado
 						</h2>
 
-						<p>
+						<p data-aos="zoom-in">
 							O batizado é um dos momentos mais importantes na
 							vida do capoeirista. Durante esse evento, o jovem
 							capoeirista recebe sua primeira corda, simbolizando
@@ -310,10 +333,10 @@ export function Capoeira() {
 					</article>
 
 					<article>
-						<h2 className="text-green-900 font-extrabold text-2xl mb-2">
+						<h2 className="text-green-900 font-extrabold text-2xl mb-2" data-aos="fade-right">
 							Capoeira nos dias de hoje
 						</h2>
-						<p className="mb-1">
+						<p className="mb-1" data-aos="zoom-in">
 							Com o tempo, a Capoeira passou de um símbolo de
 							resistência a um importante símbolo da cultura
 							brasileira, sendo praticada em todo o mundo. Em
@@ -329,7 +352,7 @@ export function Capoeira() {
 							.
 						</p>
 
-						<p>
+						<p data-aos="zoom-in">
 							Hoje, a Capoeira é mais do que uma luta ou dança.
 							Ela representa resistência cultural, celebração da
 							herança africana no Brasil e uma conexão profunda
