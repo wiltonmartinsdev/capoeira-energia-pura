@@ -8,8 +8,8 @@ import rodaDeCapoeira from "@/assets/roda-de-capoeira.jpeg";
 export function Capoeira() {
 	return (
 		<>
-			<div className="min-w-80 bg-green-900 border-b-4 border-yellow-400 sticky top-0 z-50">
-				<header className="relative h-28 md:h-28 bg-green-900 flex items-center justify-around sm:justify-normal sm:px-4  lg:max-w-[1024px] lg:mx-auto  ">
+			<div className="min-w-80 bg-green-950 border-b-4 border-yellow-400 sticky top-0 z-50">
+				<header className="relative h-28 md:h-28 bg-green-950 flex items-center justify-around sm:justify-normal sm:px-4  lg:max-w-[1024px] lg:mx-auto  ">
 					<img
 						src={logoEP}
 						className="w-16 md:w-24 "
@@ -42,13 +42,13 @@ export function Capoeira() {
 								</li>
 								<li>
 									<NavLink
-										to="/association"
+										to="/about"
 										className={({ isActive }) =>
 											isActive
 												? "text-yellow-400"
 												: "text-white"
 										}>
-										Associação
+										Sobre nós
 									</NavLink>
 								</li>
 								<li>
@@ -106,20 +106,35 @@ export function Capoeira() {
 			</div>
 
 			{/* Scroll Down */}
-			<div className="relative h-screen">
+			<div className="relative h-screen scroll-smooth">
 				<img
 					src={rodaDeCapoeira}
 					alt="Imagem de fundo"
 					className="object-cover w-full h-screen"
 				/>
 
-				<div className="absolute inset-x-0 bottom-48 sm:bottom-28 flex justify-center">
+				<div className="absolute inset-x-0 bottom-48 sm:bottom-36 flex justify-center">
 					<div className="flex flex-col justify-center items-center text-white">
-						<h2>Deslize para baixo</h2>
+						<h2 className="sm:hidden">Deslize para cima</h2>
 
-						<a href="#proxima-secao">
+						<h2 className="hidden sm:block">Deslize para baixo</h2>
+
+						<a href="#history">
 							<svg
-								className="w-10 h-10 animate-bounce text-white"
+								className="block sm:hidden w-10 h-10 animate-bounce text-white"
+								fill="none"
+								stroke="currentColor"
+								strokeWidth="2"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									d="M5 15l7-7 7 7"></path>
+							</svg>
+
+							<svg
+								className="hidden sm:block w-10 h-10 animate-bounce text-white"
 								fill="none"
 								stroke="currentColor"
 								stroke-width="2"
@@ -136,8 +151,12 @@ export function Capoeira() {
 			</div>
 			<main>
 				<section className="px-6 space-y-6 mb-8 pt-4 bg-white">
-					<article>
-						<h2 className="text-green-900 font-extrabold mb-2">História</h2>
+					<article
+						id="history"
+						className="scroll-mt-32">
+						<h2 className="text-green-900 font-extrabold text-2xl mb-2">
+							História
+						</h2>
 
 						<p>
 							A Capoeira é uma manifestação cultural
@@ -159,7 +178,7 @@ export function Capoeira() {
 					</article>
 
 					<article>
-						<h2 className="text-green-900 font-extrabold mb-2">
+						<h2 className="text-green-900 font-extrabold text-2xl mb-2">
 							O disfarce da dança
 						</h2>
 
@@ -176,7 +195,7 @@ export function Capoeira() {
 					</article>
 
 					<article>
-						<h2 className="text-green-900 font-extrabold mb-2">
+						<h2 className="text-green-900 font-extrabold text-2xl mb-2">
 							Quilombo e resistência
 						</h2>
 
@@ -194,7 +213,7 @@ export function Capoeira() {
 					</article>
 
 					<article>
-						<h2 className="text-green-900 font-extrabold mb-2">
+						<h2 className="text-green-900 font-extrabold text-2xl mb-2">
 							Proibição e marginalização
 						</h2>
 
@@ -212,7 +231,7 @@ export function Capoeira() {
 					</article>
 
 					<article>
-						<h2 className="text-green-900 font-extrabold mb-2">
+						<h2 className="text-green-900 font-extrabold text-2xl mb-2">
 							Reconhecimento e evolução
 						</h2>
 
@@ -246,7 +265,9 @@ export function Capoeira() {
 					</article>
 
 					<article>
-						<h2 className="text-green-900 font-extrabold mb-2">A roda</h2>
+						<h2 className="text-green-900 font-extrabold text-2xl mb-2">
+							A roda
+						</h2>
 
 						<p>
 							Ao contrário de outros esportes de combate, cujo
@@ -269,7 +290,9 @@ export function Capoeira() {
 					</article>
 
 					<article>
-						<h2 className="text-green-900 font-extrabold mb-2">O Batizado</h2>
+						<h2 className="text-green-900 font-extrabold text-2xl mb-2">
+							O Batizado
+						</h2>
 
 						<p>
 							O batizado é um dos momentos mais importantes na
@@ -287,7 +310,7 @@ export function Capoeira() {
 					</article>
 
 					<article>
-						<h2 className="text-green-900 font-extrabold mb-2">
+						<h2 className="text-green-900 font-extrabold text-2xl mb-2">
 							Capoeira nos dias de hoje
 						</h2>
 						<p className="mb-1">

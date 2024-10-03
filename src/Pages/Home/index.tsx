@@ -66,8 +66,8 @@ export function Home() {
 
 	return (
 		<>
-			<div className="min-w-80 bg-green-900 border-b-4 border-yellow-400 sticky top-0 z-50">
-				<header className="relative h-28 md:h-28 bg-green-900 flex items-center justify-around sm:justify-normal sm:px-4  lg:max-w-[1024px] lg:mx-auto  ">
+			<div className="min-w-80 bg-green-950 border-b-4 border-yellow-400 sticky top-0 z-50">
+				<header className="relative h-28 md:h-28 bg-green-950 flex items-center justify-around sm:justify-normal sm:px-4  lg:max-w-[1024px] lg:mx-auto  ">
 					<img
 						src={logoEP}
 						className="w-16 md:w-24 "
@@ -100,13 +100,13 @@ export function Home() {
 								</li>
 								<li>
 									<NavLink
-										to="/association"
+										to="/about"
 										className={({ isActive }) =>
 											isActive
 												? "text-yellow-400"
 												: "text-white"
 										}>
-										Associação
+										Sobre nós
 									</NavLink>
 								</li>
 								<li>
@@ -346,7 +346,7 @@ export function Home() {
 				</section>
 
 				<div
-					className="min-w-80 bg-green-900 xl:max-w-[1920px]"
+					className="min-w-80 bg-green-950 xl:max-w-[1920px]"
 					data-aos="zoom-in">
 					<section className=" h-[450px] sm:h-[720px] lg:h-[830px] xl:h-[870px]">
 						<div

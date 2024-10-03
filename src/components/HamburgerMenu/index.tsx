@@ -21,7 +21,7 @@ export const HamburgerMenu = () => {
 						animate={{ opacity: 1 }}
 						exit={{ opacity: 0 }}
 						transition={{ duration: 0.5 }}
-						className="absolute top-28 right-0 w-full z-50 bg-green-900 border-t-2 border-yellow-400 rounded-b-2xl ">
+						className="absolute top-28 right-0 w-full z-50 bg-green-950 border-t-2 border-yellow-400 rounded-b-2xl ">
 						<NavLink
 							to="/"
 							className={({ isActive }) =>
