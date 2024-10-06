@@ -190,14 +190,19 @@ export function Home() {
 						promover o rico universo da Capoeira, destacando não
 						apenas a prática do jogo em si, mas também suas
 						expressões culturais associadas, como o canto, a música
-						e a dança. Acreditamos que a Capoeira é muito mais do
-						que um esporte ou arte marcial — ela é uma manifestação
-						cultural e histórica que carrega em si valores de
-						ancestralidade, resistência e comunidade.
+						e a dança. A Capoeira é mais que um esporte ou arte
+						marcial é um símbolo de nossa ancestralidade, uma
+						expressão viva de resistência e um laço que une
+						comunidades por gerações.{" "}
+						<span className="font-bold italic">
+							A Associação Energia Pura Internacional é mais do
+							que um grupo, somos uma família unida pela paixão
+							pela arte e pela tradição da Capoeira.
+						</span>
 					</p>
 
 					<div className="text-center mb-20">
-						<Link to="/capoeira">
+						<Link to="/about">
 							<Button> Saiba mais...</Button>
 						</Link>
 					</div>

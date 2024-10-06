@@ -33,13 +33,13 @@ export const HamburgerMenu = () => {
 						</NavLink>
 
 						<NavLink
-							to="/association"
+							to="/about"
 							className={({ isActive }) =>
 								`${
 									isActive ? "text-yellow-400" : "text-white"
 								} block px-4 py-2`
 							}>
-							Associação
+							Sobre nós
 						</NavLink>
 
 						<NavLink

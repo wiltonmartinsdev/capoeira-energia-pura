@@ -138,9 +138,9 @@ export function Capoeira() {
 
 				<div className="absolute inset-x-0 bottom-48 sm:bottom-36 flex justify-center">
 					<div className="flex flex-col justify-center items-center text-white">
-						<h2 className="sm:hidden">Deslize para cima</h2>
+						<h2 className="sm:hidden">Toque ou Deslize para cima</h2>
 
-						<h2 className="hidden sm:block">Deslize para baixo</h2>
+						<h2 className="hidden sm:block">Clique ou Deslize para baixo</h2>
 
 						<a href="#history">
 							<svg
@@ -177,7 +177,9 @@ export function Capoeira() {
 					<article
 						id="history"
 						className="scroll-mt-32">
-						<h2 className="text-green-900 font-extrabold text-2xl mb-2" data-aos="fade-right">
+						<h2
+							className="text-green-900 font-extrabold text-2xl mb-2"
+							data-aos="fade-right">
 							História
 						</h2>
 
@@ -201,7 +203,9 @@ export function Capoeira() {
 					</article>
 
 					<article>
-						<h2 className="text-green-900 font-extrabold text-2xl mb-2" data-aos="fade-right">
+						<h2
+							className="text-green-900 font-extrabold text-2xl mb-2"
+							data-aos="fade-right">
 							O disfarce da dança
 						</h2>
 
@@ -218,7 +222,9 @@ export function Capoeira() {
 					</article>
 
 					<article>
-						<h2 className="text-green-900 font-extrabold text-2xl mb-2" data-aos="fade-right">
+						<h2
+							className="text-green-900 font-extrabold text-2xl mb-2"
+							data-aos="fade-right">
 							Quilombo e resistência
 						</h2>
 
@@ -236,7 +242,9 @@ export function Capoeira() {
 					</article>
 
 					<article>
-						<h2 className="text-green-900 font-extrabold text-2xl mb-2" data-aos="fade-right">
+						<h2
+							className="text-green-900 font-extrabold text-2xl mb-2"
+							data-aos="fade-right">
 							Proibição e marginalização
 						</h2>
 
@@ -254,7 +262,9 @@ export function Capoeira() {
 					</article>
 
 					<article>
-						<h2 className="text-green-900 font-extrabold text-2xl mb-2" data-aos="fade-right">
+						<h2
+							className="text-green-900 font-extrabold text-2xl mb-2"
+							data-aos="fade-right">
 							Reconhecimento e evolução
 						</h2>
 
@@ -288,7 +298,9 @@ export function Capoeira() {
 					</article>
 
 					<article>
-						<h2 className="text-green-900 font-extrabold text-2xl mb-2" data-aos="fade-right">
+						<h2
+							className="text-green-900 font-extrabold text-2xl mb-2"
+							data-aos="fade-right">
 							A roda
 						</h2>
 
@@ -313,7 +325,9 @@ export function Capoeira() {
 					</article>
 
 					<article>
-						<h2 className="text-green-900 font-extrabold text-2xl mb-2" data-aos="fade-right">
+						<h2
+							className="text-green-900 font-extrabold text-2xl mb-2"
+							data-aos="fade-right">
 							O Batizado
 						</h2>
 
@@ -333,10 +347,14 @@ export function Capoeira() {
 					</article>
 
 					<article>
-						<h2 className="text-green-900 font-extrabold text-2xl mb-2" data-aos="fade-right">
+						<h2
+							className="text-green-900 font-extrabold text-2xl mb-2"
+							data-aos="fade-right">
 							Capoeira nos dias de hoje
 						</h2>
-						<p className="mb-1" data-aos="zoom-in">
+						<p
+							className="mb-1"
+							data-aos="zoom-in">
 							Com o tempo, a Capoeira passou de um símbolo de
 							resistência a um importante símbolo da cultura
 							brasileira, sendo praticada em todo o mundo. Em
