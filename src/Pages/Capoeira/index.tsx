@@ -4,6 +4,8 @@ import { NavLink } from "react-router-dom";
 
 import { HamburgerMenu } from "@/components/HamburgerMenu";
 import { Footer } from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+import gatoPretoAcrobatics from "@/assets/gatoPretoAcrobatics.jpg";
 import historyCapoeira from "@/assets/historyCapoeira.png";
 import logoEP from "@/assets/logoEnergia.png";
 
@@ -138,9 +140,13 @@ export function Capoeira() {
 
 				<div className="absolute inset-x-0 bottom-48 sm:bottom-36 flex justify-center">
 					<div className="flex flex-col justify-center items-center text-white">
-						<h2 className="sm:hidden">Toque ou Deslize para cima</h2>
+						<h2 className="sm:hidden">
+							Toque ou Deslize para cima
+						</h2>
 
-						<h2 className="hidden sm:block">Clique ou Deslize para baixo</h2>
+						<h2 className="hidden sm:block">
+							Clique ou Deslize para baixo
+						</h2>
 
 						<a href="#history">
 							<svg
@@ -377,6 +383,38 @@ export function Capoeira() {
 							entre corpo, música.
 						</p>
 					</article>
+				</section>
+
+				<section className="px-6 sm:flex">
+					<img
+						src={gatoPretoAcrobatics}
+						alt=""
+						className="w-full sm:w-[600px] rounded-lg mb-6"
+						data-aos="fade-right"
+					/>
+
+					<div className="px-15 sm:flex sm:flex-col sm:justify-center">
+						<h2
+							className="font-extrabold text-2xl sm:text-4xl text-center mb-4 text-green-950"
+							data-aos="fade-down">
+							Quer sentir a energia contagiante da Capoeira?
+						</h2>
+						<p
+							className="sm:px-16 mb-4"
+							data-aos="fade-up">
+							Não perca tempo! A Capoeira conecta você a uma
+							comunidade rica em cultura e tradição, faça sua
+							inscrição agora ou entre em contato pelas redes
+							sociais, como WhatsApp, e descubra como essa arte
+							pode transformar sua vida! Clique no link abaixo e
+							comece sua jornada!
+						</p>
+						<div
+							className="flex justify-center mb-10"
+							data-aos="fade-up">
+							<Button>Comece sua jornada 🚀</Button>
+						</div>
+					</div>
 				</section>
 			</main>
 			<Footer />
