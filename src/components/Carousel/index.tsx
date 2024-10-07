@@ -29,7 +29,7 @@ export function Carousel() {
 				}}
 				navigation={true}
 				modules={[Autoplay,Pagination, Navigation]}
-				className="mySwiper mb-10">
+				className="mySwiper">
 				<SwiperSlide>
 					<YouTube
 						videoId="9t-fgOlXE18"
