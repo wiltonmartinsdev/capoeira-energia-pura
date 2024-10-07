@@ -310,7 +310,7 @@ export function Home() {
 
 					<article
 						className="flex flex-col"
-						data-aos="fade-left">
+						data-aos="zoom-in-left">
 						<h2 className="text-green-900 text-xl uppercase font-bold mb-3">
 							Sambaxé
 						</h2>
