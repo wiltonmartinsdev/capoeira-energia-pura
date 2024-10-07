@@ -412,7 +412,7 @@ export function Capoeira() {
 						<div
 							className="flex justify-center mb-10"
 							data-aos="fade-up">
-							<Button>Comece sua jornada 🚀</Button>
+							<Button>Comece sua jornada...</Button>
 						</div>
 					</div>
 				</section>
