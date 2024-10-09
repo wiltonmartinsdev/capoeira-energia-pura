@@ -49,7 +49,7 @@ export function Carousel() {
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					referrerPolicy="strict-origin-when-cross-origin"
 					allowFullScreen
-					className="h-[500px]"
+					className="h-[320px] sm:h-[500px]"
 				/>
 			</SwiperSlide>
 
@@ -62,7 +62,7 @@ export function Carousel() {
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					referrerPolicy="strict-origin-when-cross-origin"
 					allowFullScreen
-					className="h-[500px]"
+					className="h-[320px] sm:h-[500px]"
 				/>
 			</SwiperSlide>
 
@@ -75,7 +75,7 @@ export function Carousel() {
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					referrerPolicy="strict-origin-when-cross-origin"
 					allowFullScreen
-					className="h-[500px]"
+					className="h-[320px] sm:h-[500px]"
 				/>
 			</SwiperSlide>
 
@@ -88,7 +88,7 @@ export function Carousel() {
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					referrerPolicy="strict-origin-when-cross-origin"
 					allowFullScreen
-					className="h-[500px]"
+					className="h-[320px] sm:h-[500px]"
 				/>
 			</SwiperSlide>
 
@@ -101,7 +101,7 @@ export function Carousel() {
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					referrerPolicy="strict-origin-when-cross-origin"
 					allowFullScreen
-					className="h-[500px]"
+					className="h-[320px] sm:h-[500px]"
 				/>
 			</SwiperSlide>
 
@@ -114,7 +114,7 @@ export function Carousel() {
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					referrerPolicy="strict-origin-when-cross-origin"
 					allowFullScreen
-					className="h-[500px]"
+					className="h-[320px] sm:h-[500px]"
 				/>
 			</SwiperSlide>
 
@@ -127,7 +127,7 @@ export function Carousel() {
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					referrerPolicy="strict-origin-when-cross-origin"
 					allowFullScreen
-					className="h-[500px]"
+					className="h-[320px] sm:h-[500px]"
 				/>
 			</SwiperSlide>
 
@@ -140,7 +140,7 @@ export function Carousel() {
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					referrerPolicy="strict-origin-when-cross-origin"
 					allowFullScreen
-					className="h-[500px]"
+					className="h-[320px] sm:h-[500px]"
 				/>
 			</SwiperSlide>
 
@@ -153,7 +153,7 @@ export function Carousel() {
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					referrerPolicy="strict-origin-when-cross-origin"
 					allowFullScreen
-					className="h-[500px]"
+					className="h-[320px] sm:h-[500px]"
 				/>
 			</SwiperSlide>
 
@@ -166,7 +166,7 @@ export function Carousel() {
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					referrerPolicy="strict-origin-when-cross-origin"
 					allowFullScreen
-					className="h-[500px]"
+					className="h-[320px] sm:h-[500px]"
 				/>
 			</SwiperSlide>
 
@@ -179,7 +179,7 @@ export function Carousel() {
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					referrerPolicy="strict-origin-when-cross-origin"
 					allowFullScreen
-					className="h-[500px]"
+					className="h-[320px] sm:h-[500px]"
 				/>
 			</SwiperSlide>
 
@@ -192,7 +192,7 @@ export function Carousel() {
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					referrerPolicy="strict-origin-when-cross-origin"
 					allowFullScreen
-					className="h-[500px]"
+					className="h-[320px] sm:h-[500px]"
 				/>
 			</SwiperSlide>
 		</Swiper>
