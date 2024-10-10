@@ -115,32 +115,11 @@ export function Capoeira() {
 					className="object-cover w-full h-screen"
 				/>
 
-				<div className="absolute inset-x-0 bottom-48 sm:bottom-36 flex justify-center">
+				<div className="absolute inset-x-0 bottom-48 sm:bottom-36 lg:bottom-40 xl:bottom-28 flex justify-center">
 					<div className="flex flex-col justify-center items-center text-white">
-						<h2 className="sm:hidden">
-							Toque ou Deslize para cima
-						</h2>
-
-						<h2 className="hidden sm:block">
-							Clique ou Deslize para baixo
-						</h2>
-
 						<a href="#history">
 							<svg
-								className="block sm:hidden w-10 h-10 animate-bounce text-white"
-								fill="none"
-								stroke="currentColor"
-								strokeWidth="2"
-								viewBox="0 0 24 24"
-								xmlns="http://www.w3.org/2000/svg">
-								<path
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									d="M5 15l7-7 7 7"></path>
-							</svg>
-
-							<svg
-								className="hidden sm:block w-10 h-10 animate-bounce text-white"
+								className="block w-10 h-10 sm:w-16 sm:h-16 animate-bounce text-green-950"
 								fill="none"
 								stroke="currentColor"
 								stroke-width="2"
