@@ -123,29 +123,6 @@ export function Home() {
 
 								<li>
 									<NavLink
-										to="/projects"
-										className={({ isActive }) =>
-											isActive
-												? "text-yellow-400"
-												: "text-white"
-										}>
-										Projetos
-									</NavLink>
-								</li>
-								<li>
-									<NavLink
-										to="/medias"
-										className={({ isActive }) =>
-											isActive
-												? "text-yellow-400"
-												: "text-white"
-										}>
-										Mídias
-									</NavLink>
-								</li>
-
-								<li>
-									<NavLink
 										to="/contact"
 										className={({ isActive }) =>
 											isActive

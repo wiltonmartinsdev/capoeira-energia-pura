@@ -53,46 +53,6 @@ export const HamburgerMenu = () => {
 						</NavLink>
 
 						<NavLink
-							to="/projects"
-							className={({ isActive }) =>
-								`${
-									isActive ? "text-yellow-400" : "text-white"
-								} block px-4 py-2`
-							}>
-							Projetos
-						</NavLink>
-
-						<NavLink
-							to="/medias"
-							className={({ isActive }) =>
-								`${
-									isActive ? "text-yellow-400" : "text-white"
-								} block px-4 py-2`
-							}>
-							Mídias
-						</NavLink>
-
-						<NavLink
-							to="/contact"
-							className={({ isActive }) =>
-								`${
-									isActive ? "text-yellow-400" : "text-white"
-								} block px-4 py-2`
-							}>
-							Galeria de Fotos/vídeos
-						</NavLink>
-
-						<NavLink
-							to="/contact"
-							className={({ isActive }) =>
-								`${
-									isActive ? "text-yellow-400" : "text-white"
-								} block px-4 py-2`
-							}>
-							Faça sua Inscrição
-						</NavLink>
-
-						<NavLink
 							to="/contact"
 							className={({ isActive }) =>
 								`${
