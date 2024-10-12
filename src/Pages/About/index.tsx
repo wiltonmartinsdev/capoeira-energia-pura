@@ -150,7 +150,7 @@ export function About() {
 						<img
 							src={gatoPreto}
 							alt="Foto do Mestre Gato Preto"
-							className="w-full sm:w-1/2 mx-auto rounded-lg shadow-lg mb-1"
+							className="w-full lg:w-[750px] mx-auto rounded-lg shadow-lg mb-1"
 						/>
 
 						<figcaption className="text-xs mb-4 sm:mb-8 sm:text-center">
@@ -250,7 +250,7 @@ export function About() {
 					<img
 						src={graduationSystem}
 						alt="Sistema de Graduação"
-						className="w-full sm:w-1/2 mx-auto rounded-lg shadow-lg mb-1 border-2 border-black"
+						className="w-full sm:w-1/2 mx-auto rounded-lg shadow-lg mb-1 border-2 border-green-950"
 						data-aos="fade-up"
 					/>
 				</section>
@@ -265,7 +265,7 @@ export function About() {
 					<img
 						src={uniform}
 						alt="Uniforme da Capoeira"
-						className="w-full sm:w-1/2 mx-auto rounded-lg shadow-lg mb-1 border-2 border-black"
+						className="w-full sm:w-1/2 mx-auto rounded-lg shadow-lg mb-1 border-2 border-green-950"
 						data-aos="fade-up"
 					/>
 				</section>
