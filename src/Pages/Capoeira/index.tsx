@@ -341,11 +341,11 @@ export function Capoeira() {
 					</article>
 				</section>
 
-				<section className="px-6 sm:flex">
+				<section className="px-6 lg:flex">
 					<img
 						src={gatoPretoAcrobatics}
 						alt=""
-						className="w-full sm:w-[600px] rounded-lg mb-6"
+						className="w-full sm:w-[600px] rounded-lg mb-6 mx-auto"
 						data-aos="fade-right"
 					/>
 
