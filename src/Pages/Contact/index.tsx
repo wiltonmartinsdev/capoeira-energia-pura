@@ -36,6 +36,14 @@ export function Contact() {
 				title: "Associação Energia Pura",
 			});
 
+            marker.addListener("click", () => {
+                infoWindowContainer.style.display = "block";
+                infoWindow.draw();
+            
+                // Recentrar o mapa no marcador usando a propriedade `position`
+                map.setCenter(marker.position as google.maps.LatLng);
+            });
+
 			// Criando o InfoWindow customizado e iniciando oculto
 			const infoWindowContainer = document.createElement("div");
 			infoWindowContainer.className = "custom-infowindow-container";
