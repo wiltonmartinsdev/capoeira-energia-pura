@@ -141,7 +141,7 @@ export function About() {
 				<section className="px-8">
 					<h2
 						id="master"
-						className="my-4 text-3xl text-center font-bold scroll-mt-8"
+						className="my-4 text-3xl text-center font-bold text-green-900 scroll-mt-8"
 						data-aos="fade-down">
 						O Mestre Gato Preto
 					</h2>
@@ -242,7 +242,7 @@ export function About() {
 
 				<section className="px-8 mb-8">
 					<h2
-						className="text-2xl sm:text-3xl text-center font-bold mb-4"
+						className="text-2xl sm:text-3xl text-center font-bold text-green-900 mb-4"
 						data-aos="fade-down">
 						Sistema de Graduação
 					</h2>
@@ -250,14 +250,14 @@ export function About() {
 					<img
 						src={graduationSystem}
 						alt="Sistema de Graduação"
-						className="w-full sm:w-1/2 mx-auto rounded-lg shadow-lg mb-1 border-2 border-green-950"
+						className="w-full sm:w-1/2 mx-auto rounded-lg shadow-lg mb-1 border-2 border-green-900"
 						data-aos="fade-up"
 					/>
 				</section>
 
 				<section className="px-8 mb-8">
 					<h2
-						className="text-3xl text-center font-bold mb-4"
+						className="text-3xl text-center font-bold text-green-900 mb-4"
 						data-aos="fade-down">
 						Uniforme
 					</h2>
@@ -265,7 +265,7 @@ export function About() {
 					<img
 						src={uniform}
 						alt="Uniforme da Capoeira"
-						className="w-full sm:w-1/2 mx-auto rounded-lg shadow-lg mb-1 border-2 border-green-950"
+						className="w-full sm:w-1/2 mx-auto rounded-lg shadow-lg mb-1 border-2 border-green-900"
 						data-aos="fade-up"
 					/>
 				</section>

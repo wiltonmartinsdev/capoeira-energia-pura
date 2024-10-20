@@ -351,7 +351,7 @@ export function Capoeira() {
 
 					<div className="px-15 sm:flex sm:flex-col sm:justify-center">
 						<h2
-							className="font-extrabold text-2xl sm:text-4xl text-center mb-4 text-green-950"
+							className="font-extrabold text-2xl sm:text-4xl text-center mb-4 text-green-900"
 							data-aos="fade-down">
 							Quer sentir a energia contagiante da Capoeira?
 						</h2>
