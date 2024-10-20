@@ -4,10 +4,10 @@ import { toast } from "react-toastify";
 import * as zod from "zod";
 
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Button } from "../ui/button";
-import { Textarea } from "../ui/textarea";
-import { Input } from "../ui/input";
 
+import { Button } from "../ui/button";
+import { Input } from "../ui/input";
+import { Textarea } from "../ui/textarea";
 
 const formValidationSchema = zod.object({
 	name: zod
@@ -114,8 +114,10 @@ export function ContactForm() {
 	}
 
 	return (
-		<form onSubmit={handleSubmit(handleSendEmail, showErrorAlerts)} className="px-8">
-			<div className="flex flex-col sm:flex gap-4 mb-4">
+		<form
+			onSubmit={handleSubmit(handleSendEmail, showErrorAlerts)}
+			className="px-8 xl:px-64">
+			<div className="flex flex-col sm:flex-row gap-4 mb-4">
 				<Input
 					type="text"
 					{...register("name")}
@@ -136,7 +138,7 @@ export function ContactForm() {
 			<Textarea
 				{...register("message")}
 				placeholder="Sua mensagem..."
-				className=" mb-4"
+				className="mb-4 w-full h-40 sm:h-48 md:h-56 lg:h-64"
 			/>
 
 			<div className="flex justify-end">
@@ -145,8 +147,8 @@ export function ContactForm() {
 					className={`${
 						isSubmitDisabled ? "cursor-not-allowed " : ""
 					} ${
-						isSubmitting ? "bg-orange-600 border-none" : ""
-					} w-full sm:w-auto`}
+						isSubmitting ? "bg-green-950 border-none" : ""
+					} w-full sm:w-36`}
 					disabled={isSubmitDisabled}>
 					{isSubmitting ? (
 						<div className="flex items-center gap-2">

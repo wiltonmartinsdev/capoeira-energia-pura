@@ -36,13 +36,13 @@ export function Contact() {
 				title: "Associação Energia Pura",
 			});
 
-            marker.addListener("click", () => {
-                infoWindowContainer.style.display = "block";
-                infoWindow.draw();
-            
-                // Recentrar o mapa no marcador usando a propriedade `position`
-                map.setCenter(marker.position as google.maps.LatLng);
-            });
+			marker.addListener("click", () => {
+				infoWindowContainer.style.display = "block";
+				infoWindow.draw();
+
+				// Recentrar o mapa no marcador usando a propriedade `position`
+				map.setCenter(marker.position as google.maps.LatLng);
+			});
 
 			// Criando o InfoWindow customizado e iniciando oculto
 			const infoWindowContainer = document.createElement("div");
@@ -75,16 +75,24 @@ export function Contact() {
 				const panes = this.getPanes();
 				panes?.floatPane.appendChild(infoWindowContainer);
 			};
-            infoWindow.draw = function () {
-                const markerPosition = marker.position as google.maps.LatLng | google.maps.LatLngLiteral | null;
-                if (markerPosition) {
-                    const position = this.getProjection().fromLatLngToDivPixel(markerPosition);
-                    if (position) {
-                        infoWindowContainer.style.left = `${position.x - 159}px`;
-                        infoWindowContainer.style.top = `${position.y - 161}px`;
-                    }
-                }
-            };
+			infoWindow.draw = function () {
+				const markerPosition = marker.position as
+					| google.maps.LatLng
+					| google.maps.LatLngLiteral
+					| null;
+				if (markerPosition) {
+					const position =
+						this.getProjection().fromLatLngToDivPixel(
+							markerPosition
+						);
+					if (position) {
+						infoWindowContainer.style.left = `${
+							position.x - 159
+						}px`;
+						infoWindowContainer.style.top = `${position.y - 161}px`;
+					}
+				}
+			};
 			infoWindow.onRemove = function () {
 				infoWindowContainer.style.display = "none";
 			};
@@ -193,7 +201,7 @@ export function Contact() {
 
 				<div
 					id="map"
-					className="w-full h-[500px] mt-10"></div>
+					className="w-full h-[500px] sm:h-[675px] md:h-[721px] lg:h-[918px] mt-10"></div>
 			</main>
 			<Footer />
 		</>
