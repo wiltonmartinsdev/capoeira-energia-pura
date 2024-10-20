@@ -15,14 +15,14 @@ const formValidationSchema = zod.object({
 		.trim()
 		.min(
 			1,
-			"Ops! Por favor, insira o seu nome ou o nome da sua empresa para que eu possa entrar em contato corretamente."
+			"Ops! Por favor, insira o seu nome para que possamos entrar em contato corretamente."
 		),
 	email: zod
 		.string()
 		.trim()
 		.min(
 			1,
-			"Ops! Parece que você esqueceu de inserir seu e-mail. Por favor, adicione para que eu possa entrar em contato."
+			"Ops! Parece que você esqueceu de inserir seu e-mail. Por favor, adicione para que possamos entrar em contato."
 		)
 		.email(
 			"Ops! Parece que você adicionou um endereço inválido! Por favor, insira um e-mail válido."
@@ -82,7 +82,7 @@ export function ContactForm() {
 		try {
 			const result = await emailjs.send(
 				"service_2etnwpk",
-				"template_6kubb6g",
+				"template_naus2lq",
 				{
 					name: data.name,
 					email: data.email,
@@ -97,14 +97,14 @@ export function ContactForm() {
 			);
 			reset();
 		} catch (error) {
-			// Verifica se o erro possui uma propriedade 'text' e a exibe
+			// Verifica se o erro possui uma propriedade 'text' e a exibe.
 			if (error instanceof Error) {
 				console.log("Email sending error:", error.message);
 				toast.error(
 					"Ops! Houve um contratempo no servidor ao processar sua mensagem. Por favor, tente novamente em alguns segundos."
 				);
 			} else {
-				// Se o erro não for uma instância de Error, apenas exibe o erro como está
+				// Se o erro não for uma instância de Error, apenas exibe o erro como está.
 				console.log("Email sending error:", error);
 				toast.error(
 					"Ops! Houve um contratempo no servidor ao processar sua mensagem. Por favor, tente novamente em alguns segundos."
