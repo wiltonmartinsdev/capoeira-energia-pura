@@ -1,28 +1,19 @@
 import AOS from "aos";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { NavLink } from "react-router-dom";
 
-import { HamburgerMenu } from "@/components/HamburgerMenu";
 import { Footer } from "@/components/Footer";
-import BrazilFlagIcon from "@/assets/brazilFlagIcon.svg";
-import FranceFlagIcon from "@/assets/franceFlagIcon.svg";
+import { LanguageSelection } from "@/components/LanguageSelection";
+import { Header } from "@/components/Header";
+import { ScrollIndicator } from "@/components/ScrollIndicator";
 import gatoPreto from "@/assets/gatoPreto.jpg";
 import graduationSystem from "@/assets/graduationSystem.jpg";
-import ItalyFlagIcon from "@/assets/italyFlagIcon.svg";
-import logoEP from "@/assets/logoEnergia.png";
-import rodaDeCapoeira from "@/assets/roda-de-capoeira.jpeg";
 import uniform from "@/assets/uniform.jpg";
-import UsaFlagIcon from "@/assets/usaFlagIcon.svg";
 
 import "aos/dist/aos.css";
 
 export function About() {
-	const { t, i18n } = useTranslation();
-
-	const changeLanguage = (lng: string) => {
-		i18n.changeLanguage(lng);
-	};
+	const { t } = useTranslation();
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -47,147 +38,12 @@ export function About() {
 	return (
 		<>
 			<div className="min-w-80 bg-green-950 border-b-4 border-yellow-400 sticky top-0 z-50">
-				<header className="relative h-28 md:h-28 bg-green-950 flex items-center justify-around sm:justify-normal sm:px-4  lg:max-w-[1024px] lg:mx-auto  ">
-					<img
-						src={logoEP}
-						className="w-16 md:w-24 "
-					/>
+				<LanguageSelection />
 
-					<div className="sm:hidden">
-						<h1 className=" text-lg text-white">
-							{" "}
-							Associação Energia Pura
-						</h1>
-
-						<p className="text-center text-lg text-white">
-							Internacional
-						</p>
-					</div>
-
-					<div className="hidden sm:flex sm:w-full sm:justify-center">
-						<nav>
-							<ul className="flex items-center gap-8 text-white">
-								<li>
-									<NavLink
-										to="/"
-										className={({ isActive }) =>
-											isActive
-												? "text-yellow-400"
-												: "text-white"
-										}>
-										Notícias
-									</NavLink>
-								</li>
-								<li>
-									<NavLink
-										to="/about"
-										className={({ isActive }) =>
-											isActive
-												? "text-yellow-400"
-												: "text-white"
-										}>
-										Sobre nós
-									</NavLink>
-								</li>
-								<li>
-									<NavLink
-										to="/capoeira"
-										className={({ isActive }) =>
-											isActive
-												? "text-yellow-400"
-												: "text-white"
-										}>
-										Capoeira
-									</NavLink>
-								</li>
-
-								<li>
-									<NavLink
-										to="/contact"
-										className={({ isActive }) =>
-											isActive
-												? "text-yellow-400"
-												: "text-white"
-										}>
-										Contato
-									</NavLink>
-								</li>
-							</ul>
-						</nav>
-					</div>
-
-					<HamburgerMenu />
-
-					<div className="flex gap-4 text-white">
-						<a
-							href="#"
-							title="Bandeira do Brasil"
-							onClick={() => changeLanguage("pt")}>
-							<img
-								src={BrazilFlagIcon}
-								alt="Bandeira do Brasil"
-							/>
-						</a>
-						<a
-							href="#"
-							title="Bandeira da França"
-							onClick={() => changeLanguage("fr")}>
-							<img
-								src={FranceFlagIcon}
-								alt="Bandeira da França"
-							/>
-						</a>
-						<a
-							href="#"
-							title="Bandeira da Itália"
-							onClick={() => changeLanguage("it")}>
-							<img
-								src={ItalyFlagIcon}
-								alt="Bandeira da Itália"
-							/>
-						</a>
-
-						<a
-							href="#"
-							title="Bandeira dos Estados Unidos"
-							onClick={() => changeLanguage("en")}>
-							<img
-								src={UsaFlagIcon}
-								alt="Bandeira dos Estados Unidos"
-							/>
-						</a>
-					</div>
-				</header>
+				<Header />
 			</div>
 
-			{/* Scroll Down */}
-			<div className="relative h-screen scroll-smooth">
-				<img
-					src={rodaDeCapoeira}
-					alt="Imagem de fundo"
-					className="object-cover w-full h-screen"
-				/>
-
-				<div className="absolute inset-x-0 bottom-48 sm:bottom-36 lg:bottom-40 xl:bottom-28 flex justify-center">
-					<div className="flex flex-col justify-center items-center text-white">
-						<a href="#master">
-							<svg
-								className="sm:block w-10 h-10 sm:w-16 sm:h-16 animate-bounce text-green-950"
-								fill="none"
-								stroke="currentColor"
-								stroke-width="2"
-								viewBox="0 0 24 24"
-								xmlns="http://www.w3.org/2000/svg">
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									d="M19 9l-7 7-7-7"></path>
-							</svg>
-						</a>
-					</div>
-				</div>
-			</div>
-
+			<ScrollIndicator />
 			<main>
 				<section className="px-8">
 					<h2
