@@ -2,14 +2,14 @@ import AOS from "aos";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Marquee from "react-marquee-slider";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 
-import { HamburgerMenu } from "@/components/HamburgerMenu";
 import { Carousel } from "@/components/Carousel";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/Footer";
 import { LanguageSelection } from "@/components/LanguageSelection";
+import { Header } from "@/components/Header";
 import batucadaBgCard from "@/assets/batucadaBgCard.png";
 import brasilFlag from "@/assets/brasilFlag.png";
 import capoeiraBgCard from "@/assets/capoeiraBgCard.png";
@@ -18,7 +18,6 @@ import franceFlag from "@/assets/franceFlag.png";
 import frenchGuianaFlag from "@/assets/frenchGuianaFlag.png";
 import frenchGuianaFlagBg from "@/assets/frenchGuianaFlagBg.png";
 import italiaFlag from "@/assets/italiaFlag.png";
-import logoEP from "@/assets/logoEnergia.png";
 import macapaFlag from "@/assets/macapaFlag.png";
 import martinicaFlag from "@/assets/martinicaFlag.png";
 import oiapoqueFlag from "@/assets/oiapoqueFlag.png";
@@ -58,7 +57,6 @@ export function Home() {
 				duration: 1500,
 			});
 			AOS.refresh(); // Atualiza as animações com base no scroll
-			console.log(t("Animação AOS inicializada após scroll!"));
 
 			// Remove o event listener de scroll após a primeira execução para que o AOS não seja reinicializado em cada scroll
 			window.removeEventListener("scroll", handleScroll);
@@ -77,72 +75,7 @@ export function Home() {
 			<div className="min-w-80 bg-green-950 border-b-4 border-yellow-400 sticky top-0 z-50">
 				<LanguageSelection />
 
-				<header className="relative mb-4 bg-green-950 flex justify-around items-center sm:justify-normal sm:px-4 sm:flex-nowrap lg:max-w-[1024px] lg:mx-auto">
-					<img
-						src={logoEP}
-						className="pl-2 w-16 md:pl-0"
-					/>
-
-					<div className="sm:hidden">
-						<h1 className=" text-lg text-center text-white">
-							{t("Associação Energia Pura Internacional")}
-						</h1>
-					</div>
-
-					<div className="hidden sm:flex sm:w-full sm:justify-center">
-						<nav>
-							<ul className="flex items-center gap-8 text-white">
-								<li>
-									<NavLink
-										to="/"
-										className={({ isActive }) =>
-											isActive
-												? "text-yellow-400"
-												: "text-white"
-										}>
-										{t("Notícias")}
-									</NavLink>
-								</li>
-								<li>
-									<NavLink
-										to="/about"
-										className={({ isActive }) =>
-											isActive
-												? "text-yellow-400"
-												: "text-white"
-										}>
-										{t("Sobre nós")}
-									</NavLink>
-								</li>
-								<li>
-									<NavLink
-										to="/capoeira"
-										className={({ isActive }) =>
-											isActive
-												? "text-yellow-400"
-												: "text-white"
-										}>
-										{t("Capoeira")}
-									</NavLink>
-								</li>
-
-								<li>
-									<NavLink
-										to="/contact"
-										className={({ isActive }) =>
-											isActive
-												? "text-yellow-400"
-												: "text-white"
-										}>
-										{t("Contato")}
-									</NavLink>
-								</li>
-							</ul>
-						</nav>
-					</div>
-
-					<HamburgerMenu />
-				</header>
+				<Header />
 			</div>
 
 			<main className="min-w-80 xl:max-w-[1920px] mx-auto">
