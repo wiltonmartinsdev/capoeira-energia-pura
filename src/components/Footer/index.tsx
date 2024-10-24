@@ -1,12 +1,16 @@
+import { useTranslation } from "react-i18next";
+
 import { YoutubeLogo } from "@phosphor-icons/react";
 
 export function Footer() {
+	const { t } = useTranslation();
+
 	return (
 		<>
 			<footer className="min-w-80 h-28 bg-green-950 border-t-2 border-yellow-400">
 				<div className="sm:w-[385px] border-b-2 border-l-2 border-r-2  border-yellow-400 rounded-b-lg mx-auto flex sm:justify-between mb-4">
 					<span className=" text-xs sm:text-base leading-9 text-center font-bold mx-auto text-white bg-green-950 sm:py-[5px]">
-						Energia Pura Internacional
+						{t("Energia Pura Internacional")}
 					</span>
 
 					<span className="leading-9 text-green-900 font-bold bg-yellow-400 w-36 text-center">
@@ -20,11 +24,12 @@ export function Footer() {
 						target="_blank"
 						rel="noopener noreferrer"
 						className="text-white hover:text-yellow-400 text-xs">
-						Desenvolvido por Wilton Lira Martins
+						{t("Desenvolvido por Wilton Lira Martins")}
 					</a>
 
 					<p className="text-white hover:text-yellow-400 text-xs cursor-default">
-						Copyright &copy; 2024 - Todos os direitos reservados
+						Copyright &copy; 2024 -{" "}
+						{t("Todos os direitos reservados")}
 					</p>
 				</div>
 

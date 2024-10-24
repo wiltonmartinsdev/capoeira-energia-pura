@@ -1,5 +1,6 @@
 import AOS from "aos";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import Marquee from "react-marquee-slider";
 import { Link, NavLink } from "react-router-dom";
 import Typewriter from "typewriter-effect";
@@ -8,6 +9,7 @@ import { HamburgerMenu } from "@/components/HamburgerMenu";
 import { Carousel } from "@/components/Carousel";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/Footer";
+import { LanguageSelection } from "@/components/LanguageSelection";
 import batucadaBgCard from "@/assets/batucadaBgCard.png";
 import brasilFlag from "@/assets/brasilFlag.png";
 import capoeiraBgCard from "@/assets/capoeiraBgCard.png";
@@ -25,23 +27,29 @@ import sambaxeBgCard from "@/assets/sambaxeBgCard.png";
 import "aos/dist/aos.css";
 
 export function Home() {
+	const { t } = useTranslation();
+
 	const flags = [
-		{ src: macapaFlag, alt: "Bandeira de Macapá", caption: "Macapá" },
-		{ src: oiapoqueFlag, alt: "Bandeira do Oiapoque", caption: "Oiapoque" },
-		{ src: brasilFlag, alt: "Bandeira do Brasil", caption: "Brasil" },
+		{ src: macapaFlag, alt: t("Bandeira de Macapá"), caption: t("Macapá") },
+		{
+			src: oiapoqueFlag,
+			alt: t("Bandeira do Oiapoque"),
+			caption: t("Oiapoque"),
+		},
+		{ src: brasilFlag, alt: t("Bandeira do Brasil"), caption: t("Brasil") },
 		{
 			src: frenchGuianaFlag,
-			alt: "Bandeira da Guiana Francesa",
-			caption: "Guiana Francesa",
+			alt: t("Bandeira da Guiana Francesa"),
+			caption: t("Guiana Francesa"),
 		},
 		{
 			src: martinicaFlag,
-			alt: "Bandeira da Martinica",
-			caption: "Martinica",
+			alt: t("Bandeira da Martinica"),
+			caption: t("Martinica"),
 		},
-		{ src: franceFlag, alt: "Bandeira da França", caption: "França" },
-		{ src: italiaFlag, alt: "Bandeira da Itália", caption: "Itália" },
-		{ src: dubaiFlag, alt: "Bandeira de Dubai", caption: "Dubai" },
+		{ src: franceFlag, alt: t("Bandeira da França"), caption: t("França") },
+		{ src: italiaFlag, alt: t("Bandeira da Itália"), caption: t("Itália") },
+		{ src: dubaiFlag, alt: t("Bandeira de Dubai"), caption: t("Dubai") },
 	];
 
 	useEffect(() => {
@@ -50,7 +58,7 @@ export function Home() {
 				duration: 1500,
 			});
 			AOS.refresh(); // Atualiza as animações com base no scroll
-			console.log("Animação AOS inicializada após scroll!");
+			console.log(t("Animação AOS inicializada após scroll!"));
 
 			// Remove o event listener de scroll após a primeira execução para que o AOS não seja reinicializado em cada scroll
 			window.removeEventListener("scroll", handleScroll);
@@ -62,26 +70,23 @@ export function Home() {
 		return () => {
 			window.removeEventListener("scroll", handleScroll);
 		};
-	}, []);
+	}, [t]);
 
 	return (
 		<>
 			<div className="min-w-80 bg-green-950 border-b-4 border-yellow-400 sticky top-0 z-50">
-				<header className="relative h-28 md:h-28 bg-green-950 flex items-center justify-around sm:justify-normal sm:px-4  lg:max-w-[1024px] lg:mx-auto  ">
+				<LanguageSelection />
+
+				<header className="relative mb-4 bg-green-950 flex justify-around items-center sm:justify-normal sm:px-4 sm:flex-nowrap lg:max-w-[1024px] lg:mx-auto">
 					<img
 						src={logoEP}
-						className="w-16 md:w-24 "
+						className="pl-2 w-16 md:pl-0"
 					/>
 
 					<div className="sm:hidden">
-						<h1 className=" text-lg text-white">
-							{" "}
-							Associação Energia Pura
+						<h1 className=" text-lg text-center text-white">
+							{t("Associação Energia Pura Internacional")}
 						</h1>
-
-						<p className="text-center text-lg text-white">
-							Internacional
-						</p>
 					</div>
 
 					<div className="hidden sm:flex sm:w-full sm:justify-center">
@@ -95,7 +100,7 @@ export function Home() {
 												? "text-yellow-400"
 												: "text-white"
 										}>
-										Notícias
+										{t("Notícias")}
 									</NavLink>
 								</li>
 								<li>
@@ -106,7 +111,7 @@ export function Home() {
 												? "text-yellow-400"
 												: "text-white"
 										}>
-										Sobre nós
+										{t("Sobre nós")}
 									</NavLink>
 								</li>
 								<li>
@@ -117,7 +122,7 @@ export function Home() {
 												? "text-yellow-400"
 												: "text-white"
 										}>
-										Capoeira
+										{t("Capoeira")}
 									</NavLink>
 								</li>
 
@@ -129,7 +134,7 @@ export function Home() {
 												? "text-yellow-400"
 												: "text-white"
 										}>
-										Contato
+										{t("Contato")}
 									</NavLink>
 								</li>
 							</ul>
@@ -143,15 +148,17 @@ export function Home() {
 			<main className="min-w-80 xl:max-w-[1920px] mx-auto">
 				<Carousel />
 
-				<div className="text-left px-4 sm:px-20 lg:max-w-[1518px] lg:mx-auto">
-					<p className="h-[110px] sm:h-auto sm:mb-4 text-center font-bold">
-						Bem-vindo ao site da
+				<div className="text-left px-4 sm:px-20 lg:max-w-[1518px] lg:mx-auto mt-6 sm:mt-0">
+					<p className="h-[130px] sm:h-auto sm:mb-4 text-center font-bold">
+						{t("Bem-vindo ao site da")}
 						<br />
 						<span className="text-3xl font-bold text-green-900 italic">
 							<Typewriter
 								options={{
 									strings: [
-										"Associação Energia Pura Internacional",
+										t(
+											"Associação Energia Pura Internacional"
+										),
 									],
 									autoStart: true,
 									loop: true,
@@ -163,24 +170,19 @@ export function Home() {
 					</p>
 
 					<p className="mb-4 pl-5">
-						Nosso grupo tem como missão divulgar, preservar e
-						promover o rico universo da Capoeira, destacando não
-						apenas a prática do jogo em si, mas também suas
-						expressões culturais associadas, como o canto, a música
-						e a dança. A Capoeira é mais que um esporte ou arte
-						marcial é um símbolo de nossa ancestralidade, uma
-						expressão viva de resistência e um laço que une
-						comunidades por gerações.{" "}
+						{t(
+							"Nosso grupo tem como missão divulgar, preservar e promover o rico universo da Capoeira, destacando não apenas a prática do jogo em si, mas também suas expressões culturais associadas, como o canto, a música e a dança. A Capoeira é mais que um esporte ou arte marcial é um símbolo de nossa ancestralidade, uma expressão viva de resistência e um laço que une comunidades por gerações."
+						)}{" "}
 						<span className="font-bold italic">
-							A Associação Energia Pura Internacional é mais do
-							que um grupo, somos uma família unida pela paixão
-							pela arte e pela tradição da Capoeira.
+							{t(
+								"A Associação Energia Pura Internacional é mais do que um grupo, somos uma família unida pela paixão pela arte e pela tradição da Capoeira."
+							)}
 						</span>
 					</p>
 
 					<div className="text-center mb-20">
 						<Link to="/about">
-							<Button> Saiba mais...</Button>
+							<Button> {t("Saiba mais...")}</Button>
 						</Link>
 					</div>
 				</div>
@@ -188,7 +190,7 @@ export function Home() {
 				<h2
 					className="text-green-900 text-3xl text-center uppercase font-bold px-4 mb-8"
 					data-aos="fade-up">
-					Um pouco das nossas atividades...
+					{t("Um pouco das nossas atividades...")}
 				</h2>
 
 				<section className="max-w-[1430px] mx-auto px-8 sm:px-20 xl:flex xl:justify-around">
@@ -196,7 +198,7 @@ export function Home() {
 						className="flex flex-col mb-6"
 						data-aos="fade-right">
 						<h2 className="text-green-900 text-xl uppercase font-bold mb-3">
-							Capoeira
+							{t("Capoeira")}
 						</h2>
 
 						<div className="card flex ">
@@ -208,36 +210,34 @@ export function Home() {
 
 							<Link to="/capoeira">
 								<Button className="card-button">
-									Saiba mais...
+									{t("Saiba mais...")}
 								</Button>
 							</Link>
 						</div>
 
 						<div className="w-full xl:w-96 pl-2">
 							<p className="mb-4">
-								A capoeira é uma expressão cultural fascinante
-								que une luta, dança, jogo, canto e ritmo. É uma
-								prática envolvente e completa, além de ser uma
-								excelente porta de entrada para a rica cultura
-								brasileira, que convidamos você a conhecer.
+								{t(
+									"A capoeira é uma expressão cultural fascinante que une luta, dança, jogo, canto e ritmo. É uma prática envolvente e completa, além de ser uma excelente porta de entrada para a rica cultura brasileira, que convidamos você a conhecer."
+								)}
 							</p>
 
 							<p className="mb-4">
-								Os cursos do{" "}
+								{t("Os cursos do")}{" "}
 								<span className="font-bold italic">
-									Mestre Gato Preto
+									{t("Mestre Gato Preto")}
 								</span>{" "}
-								são voltados para todas as idades, desde
-								crianças até adultos, tanto para iniciantes
-								quanto para praticantes experientes.
+								{t(
+									"são voltados para todas as idades, desde crianças até adultos, tanto para iniciantes quanto para praticantes experientes."
+								)}
 							</p>
 
 							<p className="mb-4 lg:mb-0 xl:mb-4">
-								Experimente! A primeira aula é gratuita!
+								{t("Experimente! A primeira aula é gratuita!")}
 							</p>
 							<div className="flex justify-center">
 								<Link to="/capoeira">
-									<Button>Saiba mais...</Button>
+									<Button>{t("Saiba mais...")}</Button>
 								</Link>
 							</div>
 						</div>
@@ -247,7 +247,7 @@ export function Home() {
 						className="flex flex-col mb-6"
 						data-aos="zoom-in">
 						<h2 className="text-green-900 text-xl uppercase font-bold mb-3">
-							Batucada
+							{t("Batucada")}
 						</h2>
 
 						<div className="card flex ">
@@ -258,29 +258,29 @@ export function Home() {
 							/>
 
 							<Button className="card-button">
-								Saiba mais...
+								{t("Saiba mais...")}
 							</Button>
 						</div>
 
 						<div className="w-full xl:w-96 px-4">
 							<p className="mb-4">
-								Originária do Rio de Janeiro, a batucada é uma
-								tradição pulsante da percussão brasileira,
-								profundamente enraizada no espírito do carnaval
-								e na energia contagiante do samba.
+								{t(
+									"Originária do Rio de Janeiro, a batucada é uma tradição pulsante da percussão brasileira, profundamente enraizada no espírito do carnaval e na energia contagiante do samba."
+								)}
 							</p>
 
 							<p className="mb-4">
-								Sob a direção do{" "}
+								{t("Sob a direção do")}{" "}
 								<span className="font-bold italic">
-									Professor Marco
+									{t("Professor Marco")}
 								</span>{" "}
-								o grupo acolhe participantes de todos os níveis,
-								do iniciante ao mais experiente.
+								{t(
+									"o grupo acolhe participantes de todos os níveis, do iniciante ao mais experiente."
+								)}
 							</p>
 
 							<div className="flex justify-center">
-								<Button>Saiba mais...</Button>
+								<Button>{t("Saiba mais...")}</Button>
 							</div>
 						</div>
 					</article>
@@ -289,7 +289,7 @@ export function Home() {
 						className="flex flex-col"
 						data-aos="zoom-in-left">
 						<h2 className="text-green-900 text-xl uppercase font-bold mb-3">
-							Sambaxé
+							{t("Sambaxé")}
 						</h2>
 						<div className="card flex ">
 							<img
@@ -299,29 +299,28 @@ export function Home() {
 							/>
 
 							<Button className="card-button">
-								Saiba mais...
+								{t("Saiba mais...")}
 							</Button>
 						</div>
 
 						<div className="w-full xl:w-96 px-4">
 							<p className="mb-4">
-								A Associação Energia Pura oferece uma vibrante
-								seção de dança efêmera liderada pela talentosa{" "}
+								{t(
+									"A Associação Energia Pura oferece uma vibrante seção de dança efêmera liderada pela talentosa"
+								)}{" "}
 								<span className="font-bold italic">
-									Amandine Zabumba.
+									{t("Amandine Zabumba.")}
 								</span>
 							</p>
 
 							<p className="mb-4">
-								O ponto alto dessa experiência é a participação
-								nos desfiles do Carnaval da Guiana Francesa, ao
-								lado do grupo de percussão BATUQUE AE. Juntos,
-								eles criam um espetáculo inesquecível, cheio de
-								ritmo, cores e alegria.
+								{t(
+									"O ponto alto dessa experiência é a participação nos desfiles do Carnaval da Guiana Francesa, ao lado do grupo de percussão BATUQUE AE. Juntos, eles criam um espetáculo inesquecível, cheio de ritmo, cores e alegria."
+								)}
 							</p>
 
 							<div className="flex justify-center mb-10">
-								<Button>Saiba mais...</Button>
+								<Button>{t("Saiba mais...")}</Button>
 							</div>
 						</div>
 					</article>
@@ -337,21 +336,21 @@ export function Home() {
 								backgroundImage: `url(${frenchGuianaFlagBg})`,
 							}}>
 							<p className="text-black font-bold text-center uppercase text-3xl sm:text-4xl lg:text-6xl xl:text-7xl">
-								Energia Pura Internacional
+								{t("Energia Pura Internacional")}
 							</p>
 						</div>
 
 						<div className="px-8 pt-4">
 							<p className=" text-white text-center font-semibold sm:hidden ">
-								Estamos presentes no Brasil, mas também atuamos
-								em:
+								{t(
+									"Estamos presentes no Brasil, mas também atuamos em:"
+								)}
 							</p>
 
 							<p className="hidden sm:block text-white sm:font-semibold text-center ">
-								Estamos presentes no Brasil, no estado do Amapá,
-								com atuação em Macapá, a capital, e no município
-								de Oiapoque, na fronteira com a Guiana Francesa.
-								Além disso, também estamos em:
+								{t(
+									"Estamos presentes no Brasil, no estado do Amapá, com atuação em Macapá, a capital, e no município de Oiapoque, na fronteira com a Guiana Francesa. Além disso, também estamos em:"
+								)}
 							</p>
 						</div>
 

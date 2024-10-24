@@ -1,18 +1,29 @@
 import AOS from "aos";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 
 import { HamburgerMenu } from "@/components/HamburgerMenu";
 import { Footer } from "@/components/Footer";
+import BrazilFlagIcon from "@/assets/brazilFlagIcon.svg";
+import FranceFlagIcon from "@/assets/franceFlagIcon.svg";
 import gatoPreto from "@/assets/gatoPreto.jpg";
 import graduationSystem from "@/assets/graduationSystem.jpg";
+import ItalyFlagIcon from "@/assets/italyFlagIcon.svg";
 import logoEP from "@/assets/logoEnergia.png";
 import rodaDeCapoeira from "@/assets/roda-de-capoeira.jpeg";
 import uniform from "@/assets/uniform.jpg";
+import UsaFlagIcon from "@/assets/usaFlagIcon.svg";
 
 import "aos/dist/aos.css";
 
 export function About() {
+	const { t, i18n } = useTranslation();
+
+	const changeLanguage = (lng: string) => {
+		i18n.changeLanguage(lng);
+	};
+
 	useEffect(() => {
 		const handleScroll = () => {
 			AOS.init({
@@ -106,6 +117,46 @@ export function About() {
 					</div>
 
 					<HamburgerMenu />
+
+					<div className="flex gap-4 text-white">
+						<a
+							href="#"
+							title="Bandeira do Brasil"
+							onClick={() => changeLanguage("pt")}>
+							<img
+								src={BrazilFlagIcon}
+								alt="Bandeira do Brasil"
+							/>
+						</a>
+						<a
+							href="#"
+							title="Bandeira da França"
+							onClick={() => changeLanguage("fr")}>
+							<img
+								src={FranceFlagIcon}
+								alt="Bandeira da França"
+							/>
+						</a>
+						<a
+							href="#"
+							title="Bandeira da Itália"
+							onClick={() => changeLanguage("it")}>
+							<img
+								src={ItalyFlagIcon}
+								alt="Bandeira da Itália"
+							/>
+						</a>
+
+						<a
+							href="#"
+							title="Bandeira dos Estados Unidos"
+							onClick={() => changeLanguage("en")}>
+							<img
+								src={UsaFlagIcon}
+								alt="Bandeira dos Estados Unidos"
+							/>
+						</a>
+					</div>
 				</header>
 			</div>
 
@@ -143,7 +194,7 @@ export function About() {
 						id="master"
 						className="my-4 text-3xl text-center font-bold text-green-900 scroll-mt-8"
 						data-aos="fade-down">
-						O Mestre Gato Preto
+						{t("O Mestre Gato Preto")}
 					</h2>
 
 					<figure data-aos="fade-up">
