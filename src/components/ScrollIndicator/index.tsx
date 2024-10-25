@@ -13,7 +13,7 @@ export function ScrollIndicator() {
 				<div className="flex flex-col justify-center items-center text-white">
 					<a href="#master">
 						<svg
-							className="sm:block w-10 h-10 sm:w-16 sm:h-16 animate-bounce text-green-950"
+							className="sm:block w-10 h-10 sm:w-16 sm:h-16 animate-bounce text-white"
 							fill="none"
 							stroke="currentColor"
 							stroke-width="2"
