@@ -8,8 +8,9 @@ import UsaFlagIcon from "@/assets/usaFlagIcon.svg";
 export function LanguageSelection() {
 	const { t, i18n } = useTranslation();
 
-	const changeLanguage = (lng: string) => {
-		i18n.changeLanguage(lng);
+	const changeLanguage = async (lng: string) => {
+		await i18n.changeLanguage(lng);
+		window.scrollTo(0, 0);
 	};
 
 	return (
