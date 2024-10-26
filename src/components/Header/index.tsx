@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import logoEP from "@/assets/logoEnergia.png";
 
@@ -10,10 +10,12 @@ export function Header() {
 
 	return (
 		<header className="relative mb-4 bg-green-950 flex justify-around items-center sm:justify-normal sm:px-4 sm:flex-nowrap lg:max-w-[1024px] lg:mx-auto">
-			<img
-				src={logoEP}
-				className="pl-2 w-16 md:pl-0"
-			/>
+			<Link to="/">
+				<img
+					src={logoEP}
+					className="pl-2 w-16 md:pl-0"
+				/>
+			</Link>
 
 			<div className="sm:hidden">
 				<h1 className=" text-lg text-center text-white">
