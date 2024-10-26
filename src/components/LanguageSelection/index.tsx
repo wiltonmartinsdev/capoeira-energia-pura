@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import BrazilFlagIcon from "@/assets/brazilFlagIcon.svg";
@@ -8,8 +9,11 @@ import UsaFlagIcon from "@/assets/usaFlagIcon.svg";
 export function LanguageSelection() {
 	const { t, i18n } = useTranslation();
 
+	const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
+
 	const changeLanguage = async (lng: string) => {
 		await i18n.changeLanguage(lng);
+		setCurrentLanguage(lng);
 		window.scrollTo(0, 0);
 	};
 
@@ -22,6 +26,11 @@ export function LanguageSelection() {
 				<img
 					src={BrazilFlagIcon}
 					alt={t("Bandeira do Brasil")}
+					className={
+						currentLanguage === "pt"
+							? "border-2 rounded-3xl border-yellow-400"
+							: ""
+					}
 				/>
 			</button>
 
@@ -32,6 +41,11 @@ export function LanguageSelection() {
 				<img
 					src={FranceFlagIcon}
 					alt={t("Bandeira da França")}
+					className={
+						currentLanguage === "fr"
+							? "border-2 rounded-3xl border-yellow-400"
+							: ""
+					}
 				/>
 			</button>
 
@@ -42,6 +56,11 @@ export function LanguageSelection() {
 				<img
 					src={ItalyFlagIcon}
 					alt={t("Bandeira da Itália")}
+					className={
+						currentLanguage === "it"
+							? "border-2 rounded-3xl border-yellow-400"
+							: ""
+					}
 				/>
 			</button>
 
@@ -52,6 +71,11 @@ export function LanguageSelection() {
 				<img
 					src={UsaFlagIcon}
 					alt={t("Bandeira dos Estados Unidos")}
+					className={
+						currentLanguage === "en"
+							? "border-2 rounded-3xl border-yellow-400"
+							: ""
+					}
 				/>
 			</button>
 		</div>
