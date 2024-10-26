@@ -1,9 +1,12 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Divide as Hamburger } from "hamburger-react";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 
 export const HamburgerMenu = () => {
+	const { t } = useTranslation();
+
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
@@ -29,7 +32,7 @@ export const HamburgerMenu = () => {
 									isActive ? "text-yellow-400" : "text-white"
 								} block px-4 py-2`
 							}>
-							Notícias
+							{t("Notícias")}
 						</NavLink>
 
 						<NavLink
@@ -39,7 +42,7 @@ export const HamburgerMenu = () => {
 									isActive ? "text-yellow-400" : "text-white"
 								} block px-4 py-2`
 							}>
-							Sobre nós
+							{t("Sobre nós")}
 						</NavLink>
 
 						<NavLink
@@ -49,7 +52,7 @@ export const HamburgerMenu = () => {
 									isActive ? "text-yellow-400" : "text-white"
 								} block px-4 py-2`
 							}>
-							Capoeira
+							{t("Capoeira")}
 						</NavLink>
 
 						<NavLink
@@ -59,7 +62,7 @@ export const HamburgerMenu = () => {
 									isActive ? "text-yellow-400" : "text-white"
 								} block px-4 py-2`
 							}>
-							Contato
+							{t("Contato")}
 						</NavLink>
 					</motion.div>
 				)}

@@ -1,5 +1,6 @@
 import emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
+import { useTranslation } from "react-i18next";
 import { toast } from "react-toastify";
 import * as zod from "zod";
 
@@ -9,43 +10,47 @@ import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 
-const formValidationSchema = zod.object({
-	name: zod
-		.string()
-		.trim()
-		.min(
-			1,
-			"Ops! Por favor, insira o seu nome para que possamos entrar em contato corretamente."
-		),
-	email: zod
-		.string()
-		.trim()
-		.min(
-			1,
-			"Ops! Parece que você esqueceu de inserir seu e-mail. Por favor, adicione para que possamos entrar em contato."
-		)
-		.email(
-			"Ops! Parece que você adicionou um endereço inválido! Por favor, insira um e-mail válido."
-		),
-	subject: zod
-		.string()
-		.trim()
-		.min(
-			1,
-			"Ops! Parece que você esqueceu de preencher o assunto. Por favor, adicione um título para sua mensagem."
-		),
-	message: zod
-		.string()
-		.trim()
-		.min(
-			1,
-			"Ops! Parece que você esqueceu de preencher este campo. Por favor, digite sua mensagem."
-		),
-});
-
-type FormData = zod.infer<typeof formValidationSchema>;
-
 export function ContactForm() {
+	const { t } = useTranslation();
+
+	const formValidationSchema = zod.object({
+		name: zod
+			.string()
+			.trim()
+			.min(
+				1,
+				t(
+					"Ops! Por favor, insira o seu nome para que possamos entrar em contato corretamente."
+				)
+			),
+		email: zod
+			.string()
+			.trim()
+			.min(
+				1,
+				t("Ops! Parece que você esqueceu de inserir seu e-mail. Por favor, adicione para que possamos entrar em contato.")
+			)
+			.email(
+				t("Ops! Parece que você adicionou um endereço inválido! Por favor, insira um e-mail válido.")
+			),
+		subject: zod
+			.string()
+			.trim()
+			.min(
+				1,
+				t("Ops! Parece que você esqueceu de preencher o assunto. Por favor, adicione um título para sua mensagem.")
+			),
+		message: zod
+			.string()
+			.trim()
+			.min(
+				1,
+				t("Ops! Parece que você esqueceu de preencher este campo. Por favor, digite sua mensagem.")
+			),
+	});
+
+	type FormData = zod.infer<typeof formValidationSchema>;
+
 	const {
 		register,
 		handleSubmit,
@@ -93,7 +98,9 @@ export function ContactForm() {
 			);
 			console.log("Email sent successfully:", result.text);
 			toast.success(
-				"Sua mensagem foi enviada com sucesso! Obrigado por entrar em contato. Em breve, retornarei a você."
+				t(
+					"Sua mensagem foi enviada com sucesso! Obrigado por entrar em contato. Em breve, retornarei a você."
+				)
 			);
 			reset();
 		} catch (error) {
@@ -101,13 +108,13 @@ export function ContactForm() {
 			if (error instanceof Error) {
 				console.log("Email sending error:", error.message);
 				toast.error(
-					"Ops! Houve um contratempo no servidor ao processar sua mensagem. Por favor, tente novamente em alguns segundos."
+					t("Ops! Houve um contratempo no servidor ao processar sua mensagem. Por favor, tente novamente em alguns segundos.")
 				);
 			} else {
 				// Se o erro não for uma instância de Error, apenas exibe o erro como está.
 				console.log("Email sending error:", error);
 				toast.error(
-					"Ops! Houve um contratempo no servidor ao processar sua mensagem. Por favor, tente novamente em alguns segundos."
+					t("Ops! Houve um contratempo no servidor ao processar sua mensagem. Por favor, tente novamente em alguns segundos.")
 				);
 			}
 		}
@@ -121,23 +128,23 @@ export function ContactForm() {
 				<Input
 					type="text"
 					{...register("name")}
-					placeholder="Seu nome"
+					placeholder={t("Seu nome")}
 				/>
 				<Input
 					type="email"
 					{...register("email")}
-					placeholder="E-mail"
+					placeholder={t("Seu e-mail")}
 				/>
 				<Input
 					type="text"
 					{...register("subject")}
-					placeholder="Assunto"
+					placeholder={t("Assunto")}
 				/>
 			</div>
 
 			<Textarea
 				{...register("message")}
-				placeholder="Sua mensagem..."
+				placeholder={t("Sua mensagem...")}
 				className="mb-4 w-full h-40 sm:h-48 md:h-56 lg:h-64"
 			/>
 
@@ -152,7 +159,7 @@ export function ContactForm() {
 					disabled={isSubmitDisabled}>
 					{isSubmitting ? (
 						<div className="flex items-center gap-2">
-							<span>Enviando</span>
+							<span>{t("Enviando")}</span>
 							<div className="dots">
 								<div></div>
 								<div></div>
@@ -160,7 +167,7 @@ export function ContactForm() {
 							</div>
 						</div>
 					) : (
-						"Enviar"
+						t("Enviar")
 					)}
 				</Button>
 			</div>

@@ -115,7 +115,7 @@ export function Home() {
 
 					<div className="text-center mb-20">
 						<Link to="/about">
-							<Button> {t("Saiba mais...")}</Button>
+							<Button> {t("Saiba mais")}</Button>
 						</Link>
 					</div>
 				</div>
@@ -143,7 +143,7 @@ export function Home() {
 
 							<Link to="/capoeira">
 								<Button className="card-button">
-									{t("Saiba mais...")}
+									{t("Saiba mais")}
 								</Button>
 							</Link>
 						</div>
@@ -170,7 +170,7 @@ export function Home() {
 							</p>
 							<div className="flex justify-center">
 								<Link to="/capoeira">
-									<Button>{t("Saiba mais...")}</Button>
+									<Button>{t("Saiba mais")}</Button>
 								</Link>
 							</div>
 						</div>
@@ -191,7 +191,7 @@ export function Home() {
 							/>
 
 							<Button className="card-button">
-								{t("Saiba mais...")}
+								{t("Saiba mais")}
 							</Button>
 						</div>
 
@@ -213,7 +213,7 @@ export function Home() {
 							</p>
 
 							<div className="flex justify-center">
-								<Button>{t("Saiba mais...")}</Button>
+								<Button>{t("Saiba mais")}</Button>
 							</div>
 						</div>
 					</article>
@@ -232,7 +232,7 @@ export function Home() {
 							/>
 
 							<Button className="card-button">
-								{t("Saiba mais...")}
+								{t("Saiba mais")}
 							</Button>
 						</div>
 
@@ -253,7 +253,7 @@ export function Home() {
 							</p>
 
 							<div className="flex justify-center mb-10">
-								<Button>{t("Saiba mais...")}</Button>
+								<Button>{t("Saiba mais")}</Button>
 							</div>
 						</div>
 					</article>

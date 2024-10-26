@@ -9,6 +9,8 @@ import { ScrollIndicator } from "@/components/ScrollIndicator";
 import gatoPreto from "@/assets/gatoPreto.jpg";
 import graduationSystem from "@/assets/graduationSystem.jpg";
 import uniform from "@/assets/uniform.jpg";
+import rodaDeCapoeira from "@/assets/roda-de-capoeira.jpeg";
+
 
 import "aos/dist/aos.css";
 
@@ -42,13 +44,13 @@ export function About() {
 				<Header />
 			</div>
 
-			<ScrollIndicator />
+			<ScrollIndicator img={rodaDeCapoeira} targetSection="#master" />
 
 			<main>
 				<section className="px-8">
 					<h2
 						id="master"
-						className="my-4 text-3xl text-center font-bold text-green-900 scroll-mt-8"
+						className="my-4 text-3xl text-center font-bold text-green-900 scroll-mt-11 md:scroll-mt-14"
 						data-aos="fade-down">
 						{t("O Mestre Gato Preto")}
 					</h2>

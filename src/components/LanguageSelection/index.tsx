@@ -15,6 +15,7 @@ export function LanguageSelection() {
 	return (
 		<div className="w-40 h-14 mx-auto text-white flex justify-center gap-4">
 			<button
+				type="button"
 				title={t("Bandeira do Brasil")}
 				onClick={() => changeLanguage("pt")}>
 				<img
@@ -24,6 +25,7 @@ export function LanguageSelection() {
 			</button>
 
 			<button
+				type="button"
 				title={t("Bandeira da França")}
 				onClick={() => changeLanguage("fr")}>
 				<img
@@ -33,6 +35,7 @@ export function LanguageSelection() {
 			</button>
 
 			<button
+				type="button"
 				title={t("Bandeira da Itália")}
 				onClick={() => changeLanguage("it")}>
 				<img
@@ -42,6 +45,7 @@ export function LanguageSelection() {
 			</button>
 
 			<button
+				type="button"
 				title={t("Bandeira dos Estados Unidos")}
 				onClick={() => changeLanguage("en")}>
 				<img
