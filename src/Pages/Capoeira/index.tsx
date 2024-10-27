@@ -49,7 +49,7 @@ export function Capoeira() {
 				<section className="px-6 space-y-6 mb-8 pt-4 bg-white">
 					<article
 						id="history"
-						className="scroll-mt-36 md:scroll-mt-[155px]">
+						className="scroll-mt-36 sm:scroll-mt-[142px] md:scroll-mt-[150px]">
 						<h2
 							className="font-roboto-flex text-green-900 font-black italic text-2xl mb-2"
 							data-aos="fade-right">
