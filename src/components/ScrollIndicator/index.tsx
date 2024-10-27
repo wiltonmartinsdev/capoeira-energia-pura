@@ -2,9 +2,10 @@
 interface ScrollIndicatorProps {
     img: string;
     targetSection: string;
+    arrowColor: string;
 }
 
-export function ScrollIndicator({img, targetSection}: ScrollIndicatorProps) {
+export function ScrollIndicator({img, targetSection, arrowColor}: ScrollIndicatorProps) {
 	return (
 		<div className="relative h-screen scroll-smooth">
 			<img
@@ -18,9 +19,9 @@ export function ScrollIndicator({img, targetSection}: ScrollIndicatorProps) {
 					
                     <a href={targetSection}>
 						<svg
-							className="sm:block w-10 h-10 sm:w-16 sm:h-16 animate-bounce text-white"
+							className="sm:block w-10 h-10 sm:w-16 sm:h-16 animate-bounce"
 							fill="none"
-							stroke="currentColor"
+							stroke={arrowColor}
 							stroke-width="2"
 							viewBox="0 0 24 24"
 							xmlns="http://www.w3.org/2000/svg">

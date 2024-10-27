@@ -44,6 +44,7 @@ export function Capoeira() {
 			<ScrollIndicator
 				img={historyCapoeira}
 				targetSection="#history"
+                arrowColor="#14532d"
 			/>
 			<main>
 				<section className="px-6 space-y-6 mb-8 pt-4 bg-white">

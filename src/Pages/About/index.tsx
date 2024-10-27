@@ -44,7 +44,7 @@ export function About() {
 				<Header />
 			</div>
 
-			<ScrollIndicator img={rodaDeCapoeira} targetSection="#master" />
+			<ScrollIndicator img={rodaDeCapoeira} targetSection="#master" arrowColor="white" />
 
 			<main>
 				<section className="px-8">
