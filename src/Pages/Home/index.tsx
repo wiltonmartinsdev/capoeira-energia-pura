@@ -308,7 +308,7 @@ export function Home() {
 											alt={flag.alt}
 											className="rounded-lg"
 										/>
-										<figcaption className="uppercase text-center text-white font-semibold">
+										<figcaption className="font-roboto-flex text-center text-white font-black italic">
 											{flag.caption}
 										</figcaption>
 									</figure>
