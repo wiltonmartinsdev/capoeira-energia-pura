@@ -23,6 +23,13 @@ module.exports = {
 			xsm: { min: "425px" },
 			...defaultTheme.screens,
 		},
+
+		fontFamily: {
+
+
+            anton: ["Anton", "sans-serif"],
+            roboto: ["Roboto", "sans-serif"],
+		},
 		extend: {
 			keyframes: {
 				"accordion-down": {

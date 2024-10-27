@@ -51,7 +51,7 @@ export function Capoeira() {
 						id="history"
 						className="scroll-mt-36 md:scroll-mt-[155px]">
 						<h2
-							className="text-green-900 font-extrabold text-2xl mb-2"
+							className="font-anton text-green-900 font-extrabold text-2xl mb-2"
 							data-aos="fade-right">
 							{t("História")}
 						</h2>
@@ -64,7 +64,7 @@ export function Capoeira() {
 
 					<article>
 						<h2
-							className="text-green-900 font-extrabold text-2xl mb-2"
+							className="font-anton text-green-900 font-extrabold text-2xl mb-2"
 							data-aos="fade-right">
 							{t("O disfarce da dança")}
 						</h2>
@@ -77,7 +77,7 @@ export function Capoeira() {
 
 					<article>
 						<h2
-							className="text-green-900 font-extrabold text-2xl mb-2"
+							className="font-anton text-green-900 font-extrabold text-2xl mb-2"
 							data-aos="fade-right">
 							{t("Quilombo e resistência")}
 						</h2>
@@ -90,7 +90,7 @@ export function Capoeira() {
 
 					<article>
 						<h2
-							className="text-green-900 font-extrabold text-2xl mb-2"
+							className="font-anton text-green-900 font-extrabold text-2xl mb-2"
 							data-aos="fade-right">
 							{t("Proibição e marginalização")}
 						</h2>
@@ -103,7 +103,7 @@ export function Capoeira() {
 
 					<article>
 						<h2
-							className="text-green-900 font-extrabold text-2xl mb-2"
+							className="font-anton text-green-900 font-extrabold text-2xl mb-2"
 							data-aos="fade-right">
 							{t("Reconhecimento e evolução")}
 						</h2>
@@ -138,7 +138,7 @@ export function Capoeira() {
 
 					<article>
 						<h2
-							className="text-green-900 font-extrabold text-2xl mb-2"
+							className="font-anton text-green-900 font-extrabold text-2xl mb-2"
 							data-aos="fade-right">
 							{t("A roda")}
 						</h2>
@@ -151,7 +151,7 @@ export function Capoeira() {
 
 					<article>
 						<h2
-							className="text-green-900 font-extrabold text-2xl mb-2"
+							className="font-anton text-green-900 font-extrabold text-2xl mb-2"
 							data-aos="fade-right">
 							{t("O Batizado")}
 						</h2>
@@ -164,7 +164,7 @@ export function Capoeira() {
 
 					<article>
 						<h2
-							className="text-green-900 font-extrabold text-2xl mb-2"
+							className="font-anton text-green-900 font-extrabold text-2xl mb-2"
 							data-aos="fade-right">
 							{t("Capoeira nos dias de hoje")}
 						</h2>
@@ -202,7 +202,7 @@ export function Capoeira() {
 					/>
 					<div className="px-15 sm:flex sm:flex-col sm:justify-center">
 						<h2
-							className="font-extrabold text-2xl sm:text-4xl text-center mb-4 text-green-900"
+							className="font-anton font-extrabold text-2xl sm:text-4xl text-center mb-4 text-green-900"
 							data-aos="fade-down">
 							{t(
 								"Quer sentir a energia contagiante da Capoeira?"

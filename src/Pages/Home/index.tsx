@@ -85,7 +85,7 @@ export function Home() {
 					<p className="h-[130px] sm:h-auto sm:mb-4 text-center font-bold">
 						{t("Bem-vindo ao site da")}
 						<br />
-						<span className="text-3xl font-bold text-green-900 italic">
+						<span className="font-anton text-3xl font-bold text-green-900 italic">
 							<Typewriter
 								options={{
 									strings: [
@@ -121,7 +121,7 @@ export function Home() {
 				</div>
 
 				<h2
-					className="text-green-900 text-3xl text-center uppercase font-bold px-4 mb-8"
+					className="font-anton text-green-900 text-3xl text-center uppercase font-bold px-4 mb-8"
 					data-aos="fade-up">
 					{t("Um pouco das nossas atividades...")}
 				</h2>
@@ -268,7 +268,7 @@ export function Home() {
 							style={{
 								backgroundImage: `url(${frenchGuianaFlagBg})`,
 							}}>
-							<p className="text-black font-bold text-center uppercase text-3xl sm:text-4xl lg:text-6xl xl:text-7xl">
+							<p className="font-anton text-black font-bold text-center uppercase text-3xl sm:text-4xl lg:text-6xl xl:text-7xl">
 								{t("Energia Pura Internacional")}
 							</p>
 						</div>

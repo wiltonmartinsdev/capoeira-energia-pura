@@ -50,7 +50,7 @@ export function About() {
 				<section className="px-8">
 					<h2
 						id="master"
-						className="my-4 text-3xl text-center font-bold text-green-900 scroll-mt-11 md:scroll-mt-14"
+						className="my-4 font-anton text-3xl text-center font-bold text-green-900 scroll-mt-11 md:scroll-mt-14"
 						data-aos="fade-down">
 						{t("O Mestre Gato Preto")}
 					</h2>
@@ -109,7 +109,7 @@ export function About() {
 
 				<section className="px-8 mb-8">
 					<h2
-						className="text-2xl sm:text-3xl text-center font-bold text-green-900 mb-4"
+						className="font-anton text-2xl sm:text-3xl text-center font-bold text-green-900 mb-4"
 						data-aos="fade-down">
 						{t("Sistema de Graduação")}
 					</h2>
@@ -124,7 +124,7 @@ export function About() {
 
 				<section className="px-8 mb-8">
 					<h2
-						className="text-3xl text-center font-bold text-green-900 mb-4"
+						className="font-anton text-3xl text-center font-bold text-green-900 mb-4"
 						data-aos="fade-down">
 						{t("Uniforme")}
 					</h2>
