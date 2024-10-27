@@ -82,10 +82,10 @@ export function Home() {
 				<Carousel />
 
 				<div className="text-left px-4 sm:px-20 lg:max-w-[1518px] lg:mx-auto mt-6 sm:mt-0">
-					<p className="h-[130px] sm:h-auto sm:mb-4 text-center font-bold">
+					<p className="h-[130px] sm:h-auto sm:mb-4 text-center font-roboto-flex font-black italic">
 						{t("Bem-vindo ao site da")}
 						<br />
-						<span className="font-anton text-3xl font-bold text-green-900 italic">
+						<span className="font-roboto-flex text-3xl font-black italic text-green-900">
 							<Typewriter
 								options={{
 									strings: [
@@ -121,7 +121,7 @@ export function Home() {
 				</div>
 
 				<h2
-					className="font-anton text-green-900 text-3xl text-center uppercase font-bold px-4 mb-8"
+					className="font-roboto-flex text-green-900 text-3xl text-center font-black italic px-4 mb-8"
 					data-aos="fade-up">
 					{t("Um pouco das nossas atividades...")}
 				</h2>
@@ -268,7 +268,7 @@ export function Home() {
 							style={{
 								backgroundImage: `url(${frenchGuianaFlagBg})`,
 							}}>
-							<p className="font-anton text-black font-bold text-center uppercase text-3xl sm:text-4xl lg:text-6xl xl:text-7xl">
+							<p className="font-roboto-flex text-black font-black text-center uppercase text-3xl sm:text-4xl lg:text-6xl xl:text-7xl">
 								{t("Energia Pura Internacional")}
 							</p>
 						</div>
@@ -337,7 +337,7 @@ export function Home() {
 											alt={flag.alt}
 											className="rounded-lg"
 										/>
-										<figcaption className="uppercase text-center text-white font-semibold">
+										<figcaption className="font-roboto-flex text-center text-white font-black italic">
 											{flag.caption}
 										</figcaption>
 									</figure>
@@ -367,7 +367,7 @@ export function Home() {
 												alt={flag.alt}
 												className="rounded-lg"
 											/>
-											<figcaption className="uppercase text-center text-white font-semibold">
+											<figcaption className="font-roboto-flex text-center text-white font-black italic">
 												{flag.caption}
 											</figcaption>
 										</figure>

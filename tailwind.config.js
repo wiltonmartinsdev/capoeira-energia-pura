@@ -25,10 +25,8 @@ module.exports = {
 		},
 
 		fontFamily: {
-
-
-            anton: ["Anton", "sans-serif"],
-            roboto: ["Roboto", "sans-serif"],
+			"roboto-flex": ["Roboto Flex", "sans-serif"],
+			roboto: ["Roboto", "sans-serif"],
 		},
 		extend: {
 			keyframes: {

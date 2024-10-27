@@ -128,7 +128,7 @@ export function Contact() {
 			</div>
 
 			<main className="h-[850px] sm:h-screen flex flex-col justify-center">
-				<p className="font-anton text-green-900 font-extrabold text-xl sm:text-2xl px-4 text-center mb-10">
+				<p className="font-roboto-flex text-green-900 font-black italic text-xl sm:text-2xl px-4 text-center mb-10">
 					{t(
 						"Junte-se à Família Energia Pura! Inscreva-se e venha jogar!"
 					)}

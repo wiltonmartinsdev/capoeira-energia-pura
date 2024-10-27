@@ -9,11 +9,11 @@ export function Footer() {
 		<>
 			<footer className="min-w-80 h-28 bg-green-950 border-t-2 border-yellow-400">
 				<div className="sm:w-[385px] border-b-2 border-l-2 border-r-2  border-yellow-400 rounded-b-lg mx-auto flex sm:justify-between mb-4">
-					<span className=" text-xs sm:text-base leading-9 text-center font-bold mx-auto text-white bg-green-950 sm:py-[5px]">
+					<span className="font-roboto-flex text-xs sm:text-base leading-9 text-center font-black italic mx-auto text-white bg-green-950 sm:py-[5px]">
 						{t("Energia Pura Internacional")}
 					</span>
 
-					<span className="leading-9 text-green-900 font-bold bg-yellow-400 w-36 text-center">
+					<span className="font-roboto-flex leading-9 text-green-900 font-black italic bg-yellow-400 w-36 text-center">
 						Só o filé!
 					</span>
 				</div>

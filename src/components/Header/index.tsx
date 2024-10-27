@@ -18,14 +18,14 @@ export function Header() {
 			</Link>
 
 			<div className="sm:hidden">
-				<h1 className=" text-lg text-center text-white">
+				<h1 className="font-roboto-flex font-black italic text-lg text-center text-white">
 					{t("Associação Energia Pura Internacional")}
 				</h1>
 			</div>
 
 			<div className="hidden sm:flex sm:w-full sm:justify-center">
 				<nav>
-					<ul className="flex items-center gap-8 text-white">
+					<ul className="font-roboto-flex font-black italic flex items-center gap-8 text-white">
 						<li>
 							<NavLink
 								to="/"
