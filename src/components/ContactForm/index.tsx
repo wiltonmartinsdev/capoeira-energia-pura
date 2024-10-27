@@ -123,7 +123,7 @@ export function ContactForm() {
 	return (
 		<form
 			onSubmit={handleSubmit(handleSendEmail, showErrorAlerts)}
-			className="px-8 xl:px-64">
+			className="px-8 xl:px-64 mb-10">
 			<div className="flex flex-col sm:flex-row gap-4 mb-4">
 				<Input
 					type="text"

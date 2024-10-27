@@ -5,7 +5,8 @@ import { Footer } from "@/components/Footer";
 import { ContactForm } from "@/components/ContactForm";
 import { LanguageSelection } from "@/components/LanguageSelection";
 import { Header } from "@/components/Header";
-// import logoEP from "@/assets/logoEnergia.png";
+import { Button } from "@/components/ui/button";
+import WhatsAppIcon from "@/assets/whatsAppIcon.svg";
 
 // Declara a função initMap no objeto Window
 declare global {
@@ -127,7 +128,7 @@ export function Contact() {
 				<Header />
 			</div>
 
-			<main className="h-[850px] sm:h-screen flex flex-col justify-center">
+			<main className="h-[1130px] flex flex-col justify-center">
 				<p className="font-roboto-flex text-green-900 font-black italic text-xl sm:text-2xl px-4 text-center mb-10">
 					{t(
 						"Junte-se à Família Energia Pura! Inscreva-se e venha jogar!"
@@ -136,9 +137,28 @@ export function Contact() {
 
 				<ContactForm />
 
+				<a
+					href="https://wa.me/+594694477089"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="sm:w-[500px] h-36 mx-auto">
+					<Button
+						variant="outline"
+						className="w-full h-full mx-auto flex flex-col gap-2">
+						<img
+							src={WhatsAppIcon}
+							alt={t("Ícone do WhatsApp")}
+						/>
+						<span className="text-2xl">
+							Contate-nos pelo WhatsApp
+						</span>
+						<span>Fale diretamente com o Mestre Gato Preto</span>
+					</Button>
+				</a>
+
 				<div
 					id="map"
-					className="w-full h-[500px] sm:h-[675px] md:h-[721px] lg:h-[918px] mt-10"></div>
+					className="w-full h-[500px] xl:h-[1000px] mt-10"></div>
 			</main>
 			<Footer />
 		</>
