@@ -45,7 +45,7 @@ export function Footer() {
 							rel="noopener noreferrer">
 							<img
 								src={YoutubeIcon}
-								alt="Ícone do YouTube"
+								alt={t("Ícone do YouTube")}
 							/>
 						</a>
 					</li>
@@ -58,7 +58,7 @@ export function Footer() {
 							rel="noopener noreferrer">
 							<img
 								src={FacebookIcon}
-								alt="Ícone do Facebook"
+								alt={t("Ícone do Facebook")}
 							/>
 						</a>
 					</li>
@@ -71,7 +71,7 @@ export function Footer() {
 							rel="noopener noreferrer">
 							<img
 								src={InstagramIcon}
-								alt="Ícone do Instagram"
+								alt={t("Ícone do Instagram")}
 							/>
 						</a>
 					</li>
@@ -84,7 +84,7 @@ export function Footer() {
 							rel="noopener noreferrer">
 							<img
 								src={WhatsAppIcon}
-								alt="Ícone do WhatsApp"
+								alt={t("Ícone do WhatsApp")}
 							/>
 						</a>
 					</li>
