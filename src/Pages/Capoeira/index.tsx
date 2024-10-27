@@ -175,10 +175,12 @@ export function Capoeira() {
 							{t(
 								"Com o tempo, a Capoeira passou de um símbolo de resistência a um importante símbolo da cultura brasileira, sendo praticada em todo o mundo. Em 2008, o governo brasileiro reconheceu a Capoeira como"
 							)}
+                            {" "}
 							<span className="text-green-900 font-bold italic">
 								{t("Patrimônio Cultural Imaterial do Brasil")}
 							</span>
 							{t(", e em 2014, a UNESCO a declarou como")}
+                            {" "}
 							<span className="text-green-900 font-bold italic">
 								{t(
 									"Patrimônio Cultural Imaterial da Humanidade"
