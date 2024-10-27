@@ -335,6 +335,13 @@ button[disabled] {
 	fill: #fff;
 }
 
+.wrapper .whatsapp:hover,
+.wrapper .whatsapp:hover .tooltip,
+.wrapper .whatsapp:hover .tooltip::before {
+	background: #fff;
+	color: #1faf38;
+}
+
 /* Loadign */
 
 .dots {
