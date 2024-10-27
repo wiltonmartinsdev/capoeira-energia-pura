@@ -13,7 +13,9 @@ export function Header() {
 			<Link to="/">
 				<img
 					src={logoEP}
-					className="pl-2 w-16 md:pl-0"
+					className="pl-2 md:pl-0"
+                    width="100"
+                    height="100"
 				/>
 			</Link>
 
