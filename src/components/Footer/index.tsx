@@ -79,8 +79,8 @@ export function Footer() {
 					<li className="icon whatsapp">
 						<span className="tooltip">WhatsApp</span>
 						<a
-							href="#"
-							// target="_blank"
+							href="https://wa.me/+594694477089"
+							target="_blank"
 							rel="noopener noreferrer">
 							<img
 								src={WhatsAppIcon}
