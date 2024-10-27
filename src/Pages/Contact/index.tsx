@@ -150,9 +150,11 @@ export function Contact() {
 							alt={t("Ícone do WhatsApp")}
 						/>
 						<span className="text-2xl">
-							Contate-nos pelo WhatsApp
+							{t("Contate-nos pelo WhatsApp")}
 						</span>
-						<span>Fale diretamente com o Mestre Gato Preto</span>
+						<span>
+							{t("Fale diretamente com o Mestre Gato Preto")}
+						</span>
 					</Button>
 				</a>
 
