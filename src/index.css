@@ -303,36 +303,18 @@ button[disabled] {
 	color: #f50e02;
 }
 
-.wrapper .facebook:hover,
-.wrapper .facebook:hover .tooltip,
-.wrapper .facebook:hover .tooltip::before {
-	background: #1877f2;
-	color: #fff;
-}
-
-.wrapper .facebook svg {
-	fill: #1877f2;
-	transition: fill 0.2s ease;
-}
-
-.wrapper .facebook:hover svg {
-	fill: #fff;
-}
-
 .wrapper .instagram:hover,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before {
-	background: #e4405f;
-	color: #fff;
+	background: #fff;
+	color: #e4405f;
 }
 
-.wrapper .instagram svg {
-	fill: #e4405f;
-	transition: fill 0.2s ease;
-}
-
-.wrapper .instagram:hover svg {
-	fill: #fff;
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+	background: #fff;
+	color: #1877f2;
 }
 
 .wrapper .whatsapp:hover,
