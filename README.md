@@ -73,7 +73,7 @@ Durante o desenvolvimento da aplicação, adquiri uma série de aprendizados val
 
 - **Formulários com React Hook Form, Zod e EmailJS**: O processo de validação de formulários com `React Hook Form` e `Zod` me permitiu lidar com validações de forma mais robusta e eficiente. Além disso, integrar o EmailJS para enviar as mensagens do formulário foi uma experiência valiosa de integração com serviços externos, simplificando o envio de e-mails diretamente do site.
 
-- **Componentização com Shadcn/UI**: Utilizar componentes pré-construídos e acessíveis me ajudou a focar mais na lógica e menos na estilização, o que acelerou o desenvolvimento e melhorou a consistência visual do portfólio.
+- **Componentização com Shadcn/UI**: Utilizar componentes pré-construídos e acessíveis me ajudou a focar mais na lógica e menos na estilização, o que acelerou o desenvolvimento e melhorou a consistência visual da aplicação.
 
 - **Deploy e Hospedagem**: A experiência de deploy na Vercel foi muito enriquecedora, pois tive a oportunidade de resolver problemas relacionados a rotas, imagens e redirecionamentos, o que solidificou meus conhecimentos em deploy de aplicações front-end.
 
