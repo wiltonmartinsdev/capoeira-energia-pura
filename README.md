@@ -1,6 +1,9 @@
 
 
-![Logo](src/assets/logoReadme.png) 
+<p align="center">
+  <img src="src/assets/logoReadme.png" alt="Logo" />
+</p>
+
 # Energia Pura Internacional
 
 Este é um projeto pessoal do grupo de Capoeira em que eu faço parte. 
