@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="src/assets/logoReadme.png" alt="Logo" />
-</p>
+
 
 <h1 align="center" >Energia Pura Internacional</h1>
 
