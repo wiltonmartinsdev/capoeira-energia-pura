@@ -1,3 +1,5 @@
+![Logo](src/assets/logoReadme.png)
+
 # Energia Pura Internacional
 
 Este é um projeto pessoal do grupo de Capoeira em que eu faço parte. 
