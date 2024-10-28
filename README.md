@@ -1,6 +1,10 @@
 
 
-![Logo](src/assets/logoReadme.png) # Energia Pura Internacional
+<p align="center">
+  <img src="src/assets/logoReadme.png" alt="Logo" />
+</p>
+
+<h1 align="center" >Energia Pura Internacional</h1>
 
 Este é um projeto pessoal do grupo de Capoeira em que eu faço parte. 
 
