@@ -24,9 +24,9 @@ Nosso grupo tem como missão divulgar, preservar e promover o rico universo da C
 ## 🛠️ Instalação
 
 - Clone o repositório, com o comando abaixo, no seu terminal:
-  - Utizando HTTPS `https://github.com/wiltonmartinsdev/My-Portfolio.git` ou
-  - Utilizando SSH: `git@github.com:wiltonmartinsdev/My-Portfolio.git`.
-- Acesse o diretório do projeto: `cd My-Portfolio`.
+  - Utizando HTTPS `https://github.com/wiltonmartinsdev/capoeira-energia-pura.git` ou
+  - Utilizando SSH: `git@github.com:wiltonmartinsdev/capoeira-energia-pura.git`.
+- Acesse o diretório do projeto: `cd capoeira-energia-pura`.
 - Certifique-se de ter o Node.js e o NPM instalados em sua máquina e depois digite no terminal o comando abaixo para instalar todas as dependências necessárias do projeto.
 
       npm install
@@ -44,6 +44,8 @@ Nosso grupo tem como missão divulgar, preservar e promover o rico universo da C
 - **Responsividade**: O layout foi projetado para ser responsivo em todos os dispositivos, garantindo uma experiência de usuário fluida tanto em desktop quanto em dispositivos móveis.
 - **Navegação**: Implementação de navegação entre diferentes seções da aplicação utilizando React Router.
 - **Formulário de Contato**: Um formulário de contato funcional, validado com Zod e React Hook Form, que permite enviar mensagens diretamente para o e-mail do grupo, via EmailJS.
+- **Multilíngue**: A aplicação suporta múltiplos idiomas como: Francês, Italiano e Inglês, facilitando o acesso para usuários de diferentes regiões.
+- **Mapa Interativo**: A página de contato exibe um mapa interativo utilizando a API do Google Maps.
 - **Animações**: Utilização de animações para melhorar a interatividade do site.
 
 
