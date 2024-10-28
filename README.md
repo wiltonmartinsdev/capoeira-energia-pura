@@ -12,6 +12,8 @@ Nosso grupo tem como missão divulgar, preservar e promover o rico universo da C
 - **TailwindCSS** - Framework de CSS utilitário para estilização rápida e responsiva.
 - **Shadcn/UI** - Componentes acessíveis e personalizáveis.
 - **React Hook Form** - Gerenciamento de formulários com performance otimizada.
+- **API do Google Maps**: Integrada para exibir um mapa na página de contato.
+- **i18next**: Biblioteca para internacionalização, permitindo que a aplicação suporte múltiplos idiomas.
 - **EmailJS**: Serviço para envio de e-mails diretamente do site, utilizado para enviar o conteúdo do formulário de contato.
 - **Zod** - Biblioteca de validação e parsing de esquemas.
 
