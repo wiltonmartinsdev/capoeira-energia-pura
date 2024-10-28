@@ -77,6 +77,9 @@ Durante o desenvolvimento da aplicação, adquiri uma série de aprendizados val
 
 - **Deploy e Hospedagem**: A experiência de deploy na Vercel foi muito enriquecedora, pois tive a oportunidade de resolver problemas relacionados a rotas, imagens e redirecionamentos, o que solidificou meus conhecimentos em deploy de aplicações front-end.
 
-- **Resolução de Problemas**: Durante o desenvolvimento, enfrentei desafios como erros em formulários, comportamento de layout em dispositivos móveis e integrações com serviços externos. Cada obstáculo me ajudou a melhorar minha capacidade de resolução de problemas e a buscar soluções mais eficientes.
+- **Resolução de Problemas**: Durante o desenvolvimento, enfrentei desafios significativos que aprimoraram minha capacidade de resolver problemas e buscar soluções eficazes. 
+  - Enfrentei desafios como erros em formulários, comportamento de layout em dispositivos móveis e integrações com serviços externos. Cada obstáculo me ajudou a melhorar minha capacidade de resolução de problemas e a buscar soluções mais eficientes.
+  - A implementação da API do Google Maps foi uma grande experiência, especialmente ao configurar as coordenadas corretas para os marcadores, adicionar ícones personalizados no InfoWindow, e lidar com a personalização dessa janela.
+  - A internacionalização também foi um desafio considerável, pois configurar o i18next para suportar quatro idiomas exigiu um trabalho detalhado. Foi preciso extrair automaticamente os textos estáticos e organizar arquivos JSON com todas as traduções correspondentes a cada idioma. Esse processo me ajudou a aprimorar habilidades em gerenciamento de configuração e manipulação de conteúdo multilíngue.
 
 Esses aprendizados contribuíram para que eu evoluísse não só tecnicamente, mas também na minha capacidade de pensar em soluções mais escaláveis e em proporcionar uma melhor experiência para o usuário final.
