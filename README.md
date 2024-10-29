@@ -64,7 +64,7 @@ Nosso grupo tem como missão divulgar, preservar e promover o rico universo da C
 
 ## 📚 Aprendizados
 
-Durante o desenvolvimento da aplicação, adquiri uma série de aprendizados valiosos que aprimoraram minhas habilidades como desenvolvedor front-end:
+Durante o desenvolvimento da aplicação, tive a oportunidade de adquirir valiosos aprendizados que aprimoraram minhas habilidades como desenvolvedor front-end:
 
 -   **Organização e Arquitetura de Código**: Aprendi a estruturar um projeto de maneira eficiente, organizando componentes e pastas de uma forma clara e escalável, o que facilita futuras manutenções e atualizações.
 
