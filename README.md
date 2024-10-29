@@ -56,7 +56,7 @@ Nosso grupo tem como missão divulgar, preservar e promover o rico universo da C
 
 ## 📊 Status do Projeto
 
--   A aplicação encontra-se finalizada, mas, podendo ser implementada novas funcionalidades no futuro.
+-   A aplicação está finalizada, mas novas funcionalidades poderão ser implementadas no futuro.
 
 ## 📄 Licença
 
