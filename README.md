@@ -8,7 +8,7 @@ Este é um projeto pessoal desenvolvido para o grupo de Capoeira Energia Pura In
 
 Nosso grupo tem como missão divulgar, preservar e promover o rico universo da Capoeira, destacando não apenas a prática do jogo em si, mas também suas expressões culturais associadas, como o canto, a música e a dança. A Capoeira é mais que um esporte ou arte marcial é um símbolo de nossa ancestralidade, uma expressão viva de resistência e um laço que une comunidades por gerações. A Associação Energia Pura Internacional é mais do que um grupo, somos uma família unida pela paixão pela arte e pela tradição da Capoeira.
 
-## 🎨 Tecnologias Utilizadas
+## 👨🏻‍💻 Tecnologias Utilizadas
 
 -   **React** - Biblioteca para construção de interfaces de usuário.
 -   **TypeScript** - Superset do JavaScript que adiciona tipagem estática.
