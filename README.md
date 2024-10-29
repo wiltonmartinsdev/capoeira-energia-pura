@@ -22,27 +22,28 @@ Nosso grupo tem como missão divulgar, preservar e promover o rico universo da C
 
 ## 🛠️ Pré-requisitos
 
--   Node.js instalado na máquina - versão 20.17.0-LTS ou superior.
--   NPM (Node Package Manager) para instalar as dependências necessárias do projeto.
+-   Node.js: Versão 20.17.0 LTS ou superior instalada na máquina.
+-   NPM (Node Package Manager): Necessário para instalar as dependências do projeto.
 
 ## 🛠️ Instalação
 
--   Clone o repositório, com o comando abaixo, no seu terminal:
+1. Clone o repositório no seu terminal com um dos comandos abaixo:
     -   Utizando HTTPS `https://github.com/wiltonmartinsdev/capoeira-energia-pura.git` ou
     -   Utilizando SSH: `git@github.com:wiltonmartinsdev/capoeira-energia-pura.git`.
--   Acesse o diretório do projeto: `cd capoeira-energia-pura`.
--   Certifique-se de ter o Node.js e o NPM instalados em sua máquina e depois digite no terminal o comando abaixo para instalar todas as dependências necessárias do projeto.
+
+2. Acesse o diretório do projeto: `cd capoeira-energia-pura`.
+
+3. Certifique-se de ter o Node.js e o NPM instalados em sua máquina. Em seguida, execute o comando abaixo para instalar todas as dependências do projeto:
 
         npm install
 
 ## 🚀 Execução da Aplicação
 
--   Após instalar todas as dependências necessárias do projeto, agora poderá executá-lo da seguinte maneira:
--   Digite no terminal o comando abaixo:
+-   Após instalar todas as dependências do projeto, você pode executá-lo com o comando abaixo no terminal:
 
           npm run dev
 
-          Após esse comando, o servidor será iniciado e aparecerá a mensagem: "Local: http://localhost:" informando que o servidor esta sendo executado e mostrará a porta de execução. A partir, desta etapa podemos testar a aplicação.
+          Esse comando iniciará o servidor, e uma mensagem como "Local: http://localhost:<porta>" indicará que o servidor está em execução, exibindo a porta utilizada. A partir desse ponto, você poderá testar a aplicação no navegador.
 
 ## ✨ Funcionalidades
 
