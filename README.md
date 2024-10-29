@@ -37,9 +37,31 @@ Nosso grupo tem como missão divulgar, preservar e promover o rico universo da C
 
         npm install
 
+
+## 🛠️ Variáveis de Ambiente
+
+Para que o mapa seja exibido corretamente na página de contato, é necessário configurar a chave da API do Google Maps. Siga os passos abaixo para definir as variáveis de ambiente:
+
+1. Crie uma conta no [Google Cloud Platform (GCP)](https://cloud.google.com/) caso ainda não tenha uma.
+2. No GCP, crie um novo projeto ou use um projeto existente.
+3. Ative a API do Google Maps para o seu projeto.
+4. Gere uma chave da API do Google Maps.
+5. Crie um arquivo `.env` na raiz do projeto.
+6. Use o arquivo `.env.example` como referência. O arquivo `.env` deve conter a seguinte variável:
+
+    ```env
+    VITE_GOOGLE_MAPS_API_KEY=YOUR_NEW_API_KEY
+    ```
+
+7. Substitua `YOUR_NEW_API_KEY` pela sua chave da API do Google Maps.
+
+8. Salve o arquivo.
+
+- Seguindo esses passos, você garantirá que o mapa seja exibido corretamente na página de contato.
+
 ## 🚀 Execução da Aplicação
 
--   Após instalar todas as dependências do projeto, você pode executá-lo com o comando abaixo no terminal:
+-   Após instalar todas as dependências do projeto e configurar a variável de ambiente, você pode executá-lo com o comando abaixo no terminal:
 
           npm run dev
 
