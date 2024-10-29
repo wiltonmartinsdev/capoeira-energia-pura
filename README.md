@@ -42,7 +42,7 @@ Nosso grupo tem como missão divulgar, preservar e promover o rico universo da C
 
 Para que o mapa seja exibido corretamente na página de contato, é necessário configurar a chave da API do Google Maps. Siga os passos abaixo para definir as variáveis de ambiente:
 
-1. Crie uma conta no <a href="https://cloud.google.com/" target="_blank">Google Cloud Platform (GCP)</a> caso ainda não tenha uma.
+1. Crie uma conta no <a href="https://cloud.google.com/" target="_blank" rel="noopener noreferrer">Google Cloud Platform (GCP)</a> caso ainda não tenha uma.
 2. No GCP, crie um novo projeto ou use um projeto existente.
 3. Ative a API do Google Maps para o seu projeto.
 4. Gere uma chave da API do Google Maps.
