@@ -64,6 +64,16 @@ export const HamburgerMenu = () => {
 							}>
 							{t("Contato")}
 						</NavLink>
+
+						<NavLink
+							to="/store"
+							className={({ isActive }) =>
+								`${
+									isActive ? "text-yellow-400" : "text-white"
+								} block px-4 py-2`
+							}>
+							{t("Loja EP")}
+						</NavLink>
 					</motion.div>
 				)}
 			</AnimatePresence>

@@ -65,6 +65,16 @@ export function Header() {
 								{t("Contato")}
 							</NavLink>
 						</li>
+						
+                        <li>
+							<NavLink
+								to="/store"
+								className={({ isActive }) =>
+									isActive ? "text-yellow-400" : "text-white"
+								}>
+								{t("Loja EP")}
+							</NavLink>
+						</li>
 					</ul>
 				</nav>
 			</div>
