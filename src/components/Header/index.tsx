@@ -6,8 +6,7 @@ import {
 import { useTranslation } from "react-i18next";
 import { NavLink, useLocation } from "react-router-dom";
 
-import EP from "@/assets/EP.png";
-import logoEP from "@/assets/logoEnergia.png";
+import logoEP from "@/assets/logoEP.png";
 
 import { DropdownMenu, DropdownMenuItem } from "../ui/dropdown-menu";
 import { HamburgerMenu } from "../HamburgerMenu";
@@ -21,11 +20,11 @@ export function Header() {
 	return (
 		<header className="min-w-80 bg-green-950 border-b-4 border-yellow-400 sticky top-0 z-50">
 			<LanguageSelection />
-			<section className="border border-red-500 flex justify-between">
+			<section className="flex justify-around items-center">
 				<img
-					src={EP}
+					src={logoEP}
 					alt=""
-					className="w-40 xl:w-96 xl:mx-auto"
+					className="w-40 h-8 xl:w-96 xl:h-auto xl:mx-auto"
 				/>
 				<HamburgerMenu />
 			</section>

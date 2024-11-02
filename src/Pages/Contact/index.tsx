@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 
 import { Footer } from "@/components/Footer";
 import { ContactForm } from "@/components/ContactForm";
-import { LanguageSelection } from "@/components/LanguageSelection";
 import { Header } from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import WhatsAppIcon from "@/assets/whatsAppIcon.svg";
@@ -122,11 +121,7 @@ export function Contact() {
 	}, []);
 	return (
 		<>
-			<div className="min-w-80 bg-green-950 border-b-4 border-yellow-400 sticky top-0 z-50 mb-10">
-				<LanguageSelection />
-
-				<Header />
-			</div>
+			<Header />
 
 			<main className="h-[1130px] flex flex-col justify-center">
 				<p className="font-roboto-flex text-green-900 font-black italic text-xl sm:text-2xl px-4 text-center mb-10">

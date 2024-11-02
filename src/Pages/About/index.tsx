@@ -3,14 +3,12 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 import { Footer } from "@/components/Footer";
-import { LanguageSelection } from "@/components/LanguageSelection";
 import { Header } from "@/components/Header";
 import { ScrollIndicator } from "@/components/ScrollIndicator";
 import gatoPreto from "@/assets/gatoPreto.jpg";
 import graduationSystem from "@/assets/graduationSystem.jpg";
-import uniform from "@/assets/uniform.jpg";
 import rodaDeCapoeira from "@/assets/roda-de-capoeira.jpeg";
-
+import uniform from "@/assets/uniform.jpg";
 
 import "aos/dist/aos.css";
 
@@ -38,13 +36,13 @@ export function About() {
 
 	return (
 		<>
-			<div className="min-w-80 bg-green-950 border-b-4 border-yellow-400 sticky top-0 z-50">
-				<LanguageSelection />
+			<Header />
 
-				<Header />
-			</div>
-
-			<ScrollIndicator img={rodaDeCapoeira} targetSection="#master" arrowColor="white" />
+			<ScrollIndicator
+				img={rodaDeCapoeira}
+				targetSection="#master"
+				arrowColor="white"
+			/>
 
 			<main>
 				<section className="px-8">

@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { LanguageSelection } from "@/components/LanguageSelection";
 import { Header } from "@/components/Header";
 import { ScrollIndicator } from "@/components/ScrollIndicator";
 import gatoPretoAcrobatics from "@/assets/gatoPretoAcrobatics.jpg";
@@ -35,16 +34,12 @@ export function Capoeira() {
 	}, []);
 	return (
 		<>
-			<div className="min-w-80 bg-green-950 border-b-4 border-yellow-400 sticky top-0 z-50">
-				<LanguageSelection />
-
-				<Header />
-			</div>
+			<Header />
 
 			<ScrollIndicator
 				img={historyCapoeira}
 				targetSection="#history"
-                arrowColor="#14532d"
+				arrowColor="#14532d"
 			/>
 			<main>
 				<section className="px-6 space-y-6 mb-8 pt-4 bg-white">
@@ -174,13 +169,11 @@ export function Capoeira() {
 							data-aos="zoom-in">
 							{t(
 								"Com o tempo, a Capoeira passou de um símbolo de resistência a um importante símbolo da cultura brasileira, sendo praticada em todo o mundo. Em 2008, o governo brasileiro reconheceu a Capoeira como"
-							)}
-                            {" "}
+							)}{" "}
 							<span className="text-green-900 font-bold italic">
 								{t("Patrimônio Cultural Imaterial do Brasil")}
 							</span>
-							{t(", e em 2014, a UNESCO a declarou como")}
-                            {" "}
+							{t(", e em 2014, a UNESCO a declarou como")}{" "}
 							<span className="text-green-900 font-bold italic">
 								{t(
 									"Patrimônio Cultural Imaterial da Humanidade"
