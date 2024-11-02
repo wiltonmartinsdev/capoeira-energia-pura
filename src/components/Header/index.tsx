@@ -1,29 +1,34 @@
+import {
+	DropdownMenuContent,
+	DropdownMenuSeparator,
+	DropdownMenuTrigger,
+} from "@radix-ui/react-dropdown-menu";
 import { useTranslation } from "react-i18next";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
+import EP from "@/assets/EP.png";
 import logoEP from "@/assets/logoEnergia.png";
 
+import { DropdownMenu, DropdownMenuItem } from "../ui/dropdown-menu";
 import { HamburgerMenu } from "../HamburgerMenu";
+import { LanguageSelection } from "../LanguageSelection";
 
 export function Header() {
 	const { t } = useTranslation();
 
-	return (
-		<header className="relative mb-4 bg-green-950 flex justify-around items-center sm:justify-normal sm:px-4 sm:flex-nowrap lg:max-w-[1024px] lg:mx-auto">
-			<Link to="/">
-				<img
-					src={logoEP}
-					className="pl-2 md:pl-0"
-                    width="100"
-                    height="100"
-				/>
-			</Link>
+	const location = useLocation();
 
-			<div className="sm:hidden">
-				<h1 className="font-roboto-flex font-black italic text-lg text-center text-white">
-					{t("Associação Energia Pura Internacional")}
-				</h1>
-			</div>
+	return (
+		<header className="min-w-80 bg-green-950 border-b-4 border-yellow-400 sticky top-0 z-50">
+			<LanguageSelection />
+			<section className="border border-red-500 flex justify-between">
+				<img
+					src={EP}
+					alt=""
+					className="w-40 xl:w-96 xl:mx-auto"
+				/>
+				<HamburgerMenu />
+			</section>
 
 			<div className="hidden sm:flex sm:w-full sm:justify-center">
 				<nav>
@@ -65,8 +70,8 @@ export function Header() {
 								{t("Contato")}
 							</NavLink>
 						</li>
-						
-                        <li>
+
+						<li>
 							<NavLink
 								to="/store"
 								className={({ isActive }) =>
@@ -79,7 +84,25 @@ export function Header() {
 				</nav>
 			</div>
 
-			<HamburgerMenu />
+			{location.pathname === "/store" && (
+				<>
+					<DropdownMenu>
+						<DropdownMenuTrigger className="w-32">
+							Minha Conta
+						</DropdownMenuTrigger>
+						<DropdownMenuContent className="flex">
+							<DropdownMenuSeparator />
+							<DropdownMenuItem>Login</DropdownMenuItem>
+							<DropdownMenuSeparator />
+							<DropdownMenuItem>Cadastrar</DropdownMenuItem>
+						</DropdownMenuContent>
+					</DropdownMenu>
+
+					<div>
+						<h1>Carinho</h1>
+					</div>
+				</>
+			)}
 		</header>
 	);
 }
