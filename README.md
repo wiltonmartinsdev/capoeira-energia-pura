@@ -78,7 +78,7 @@ Para que o mapa seja exibido corretamente na página de contato, é necessário 
 
 ## 📊 Status do Projeto
 
--   A aplicação está finalizada, mas novas funcionalidades poderão ser implementadas no futuro.
+-   A aplicação está finalizada, mas novas funcionalidades, como a página de Loja, estão sendo implementadas.
 
 ## 📄 Licença
 
