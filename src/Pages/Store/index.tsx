@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 import { Header } from "@/components/Header";
 import { LanguageSelection } from "@/components/LanguageSelection";
 import ConstructionIcon from "@/assets/constructionIcon.svg";
-import RocketIcon from "@/assets/rocketIcon.svg";
 
 export function Store() {
 	const { t } = useTranslation();
@@ -15,23 +14,20 @@ export function Store() {
 				<Header />
 			</div>
 
-			<main className="min-w-80 xl:max-w-[1920px] mx-auto h-screen flex justify-center">
-				<section className="font-roboto-flex font-black text-green-900 flex items-center gap-6">
+			<main
+				className="min-w-80 xl:max-w-[1920px] mx-auto flex justify-center items-center"
+				style={{ minHeight: "calc(100vh - 166px)" }}>
+				<section className="font-roboto-flex font-black text-green-900 flex flex-col items-center gap-6 lg:flex-row lg:px-20 lg:gap-0">
 					<img
 						src={ConstructionIcon}
 						alt=""
 					/>
 
-					<h1 className="text-2xl">
+					<h1 className="text-xl px-4 sm:text-2xl text-center">
 						{t(
 							"Esta página está em construção. Volte em breve para ver as novidades!"
 						)}
 					</h1>
-
-					<img
-						src={RocketIcon}
-						alt=""
-					/>
 				</section>
 			</main>
 		</>
