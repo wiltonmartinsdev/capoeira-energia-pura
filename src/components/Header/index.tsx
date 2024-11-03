@@ -39,9 +39,9 @@ export function Header() {
 					</DropdownMenuTrigger>
 					<DropdownMenuContent className="">
 						<DropdownMenuSeparator />
-						<DropdownMenuItem>Login</DropdownMenuItem>
+						<DropdownMenuItem>{t("Entrar")}</DropdownMenuItem>
 						<DropdownMenuSeparator />
-						<DropdownMenuItem>Cadastrar</DropdownMenuItem>
+						<DropdownMenuItem>{t("Cadastrar")}</DropdownMenuItem>
 					</DropdownMenuContent>
 				</DropdownMenu>
 
