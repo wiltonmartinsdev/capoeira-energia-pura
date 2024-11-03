@@ -24,7 +24,7 @@ export const HamburgerMenu = () => {
 						animate={{ opacity: 1 }}
 						exit={{ opacity: 0 }}
 						transition={{ duration: 0.5 }}
-						className="font-roboto-flex font-black italic absolute top-[76px] right-0 w-full z-50 bg-green-950 rounded-b-2xl ">
+						className="font-roboto-flex font-black italic absolute top-[164px] right-0 w-full z-50 bg-green-950 rounded-b-2xl ">
 						<NavLink
 							to="/"
 							className={({ isActive }) =>
