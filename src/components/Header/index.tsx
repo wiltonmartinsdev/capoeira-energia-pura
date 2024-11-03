@@ -8,7 +8,9 @@ import {
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 
+import LoginIcon from "@/assets/loginIcon.svg";
 import logoEP from "@/assets/logoEP.png";
+import RegisterUserIcon from "@/assets/registerUserIcon.svg";
 import ShoppingCartIcon from "@/assets/shoppingCartIcon.svg";
 import UserAccountIcon from "@/assets/userAccountIcon.svg";
 
@@ -39,9 +41,25 @@ export function Header() {
 					</DropdownMenuTrigger>
 					<DropdownMenuContent className="">
 						<DropdownMenuSeparator />
-						<DropdownMenuItem>{t("Entrar")}</DropdownMenuItem>
+						<DropdownMenuItem>
+							<div className="flex items-center gap-2">
+								<img
+									src={LoginIcon}
+									alt=""
+								/>
+								{t("Entrar")}
+							</div>{" "}
+						</DropdownMenuItem>
 						<DropdownMenuSeparator />
-						<DropdownMenuItem>{t("Cadastrar")}</DropdownMenuItem>
+						<DropdownMenuItem>
+							<div className="flex items-center gap-2">
+								<img
+									src={RegisterUserIcon}
+									alt=""
+								/>
+								{t("Cadastrar")}
+							</div>
+						</DropdownMenuItem>
 					</DropdownMenuContent>
 				</DropdownMenu>
 
