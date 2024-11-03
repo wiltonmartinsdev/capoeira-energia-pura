@@ -48,7 +48,7 @@ export function About() {
 				<section className="px-8">
 					<h2
 						id="master"
-						className="my-4 font-roboto-flex text-3xl text-center font-black italic text-green-900 scroll-mt-14 sm:scroll-mt-[70px]  md:scroll-mt-20"
+						className="my-4 font-roboto-flex text-3xl text-center font-black italic text-green-900 scroll-mt-20 sm:scroll-mt-[60px]  md:scroll-mt-16"
 						data-aos="fade-down">
 						{t("O Mestre Gato Preto")}
 					</h2>
