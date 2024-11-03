@@ -69,16 +69,16 @@ export function Header() {
 				/>
 			</div>
 
-			<section className="flex justify-around items-center my-1">
+			<section className="flex justify-around items-center my-2 sm:my-0">
 				<img
 					src={logoEP}
 					alt=""
-					className="w-52 h-10 xl:w-96 xl:h-auto xl:mx-auto"
+					className="w-64 xl:mx-auto"
 				/>
 				<HamburgerMenu />
 			</section>
 
-			<div className="hidden sm:flex sm:w-full sm:justify-center my-6">
+			<div className="hidden sm:flex sm:w-full sm:justify-center my-2">
 				<nav>
 					<ul className="font-roboto-flex font-black italic flex items-center gap-8 text-white">
 						<li>
