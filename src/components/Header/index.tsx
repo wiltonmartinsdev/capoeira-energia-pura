@@ -31,10 +31,10 @@ export function Header() {
 						/>
 
 						<div className="flex flex-col">
-							<span>Minha conta</span>
 							<span className="text-left font-roboto-flex font-black">
-								Acessar
+								{t("Acessar")}
 							</span>
+							<span>{t("Minha Conta")}</span>
 						</div>
 					</DropdownMenuTrigger>
 					<DropdownMenuContent className="">
