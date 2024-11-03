@@ -14,7 +14,7 @@ export function ScrollIndicator({img, targetSection, arrowColor}: ScrollIndicato
 				className="object-cover w-full h-screen"
 			/>
 
-			<div className="absolute inset-x-0 bottom-64 sm:bottom-56 md:bottom-60 xl:bottom-56 flex justify-center">
+			<div className="absolute inset-x-0 bottom-64 sm:bottom-48 xl:bottom-40 flex justify-center">
 				<div className="flex flex-col justify-center items-center text-white">
 					
                     <a href={targetSection}>

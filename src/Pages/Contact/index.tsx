@@ -124,7 +124,7 @@ export function Contact() {
 			<Header />
 
 			<main className="h-[1130px] flex flex-col justify-center">
-				<p className="font-roboto-flex text-green-900 font-black italic text-xl sm:text-2xl px-4 text-center mb-10">
+				<p className="font-roboto-flex text-green-900 font-black italic text-xl sm:text-2xl px-4 text-center my-10">
 					{t(
 						"Junte-se à Família Energia Pura! Inscreva-se e venha jogar!"
 					)}

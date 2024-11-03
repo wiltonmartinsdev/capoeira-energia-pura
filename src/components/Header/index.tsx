@@ -24,7 +24,7 @@ export function Header() {
 		<header className="min-w-80 bg-green-950 border-b-4 border-yellow-400 sticky top-0 z-50">
 			<LanguageSelection />
 
-			<div className="flex justify-around sm:absolute right-0 text-white gap-14 sm:gap-6 sm:px-8 xl:gap-8 xl:justify-end xl:px-10">
+			<div className="flex justify-around sm:absolute right-0 text-white gap-28 sm:gap-6 sm:px-8 xl:gap-8 xl:justify-end xl:px-10">
 				<DropdownMenu>
 					<DropdownMenuTrigger className="flex items-center gap-2">
 						<img
